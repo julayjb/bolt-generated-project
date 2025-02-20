@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex">
+    <!--<meta name="keywords" content="bot Deriv, Deriv bot, Opções Binárias, Índices Sintéticos, Binary bots, dbot, bots grátis, trading bots, automated trading, trading strategies">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ponto Bots | Plataforma de Bots Gratuita</title>
+    <!--<meta name="description" content="Descubra e opere com nossos bots inéditos, operando em vários mercados ao mesmo tempo. Bots projetados para automatizar as melhores estratégias de negociação em Opções Binárias e Índices Sintéticos na corretora Deriv">-->
+    <link rel="icon" type="image/x-icon" href="image/icon_ponto.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/w3.css">
+  </head>
+  <body id="body_main" class="container_main">
+
+    <div id="box_header" class="headertest">
+      <!--<img src="image/logo_ponto01.png" style="height: 100%;width: auto; vertical-align: middle; margin-left: 7px; margin-right: 15px;" alt="Logo">
+      <input type="image" src="image/icon_deriv2.png" id="asdbtnhead_deriv2" style="height: 58%; width: auto; vertical-align: middle; margin-right: 5px;" title="Acessar Conta Deriv" alt="Conta Deriv">
+      <input type="image" src="image/icon_youtubesmall2.png" id="asdbtnhead_youtube2" style="height: 58%; width: auto; vertical-align: middle; margin-right: 5px;" title="Tutoriais no YouTube" alt=Tutoriais>
+      <input type="image" src="image/icon_warning2.png" id="btnhead_allmenu" style="height: 58%; width: auto; vertical-align: middle; margin-right: 5px;" title="LEIA Antes de Operar - Aviso de Risco" alt="Aviso">
+      <span id="divdatetime" style="color: #fff; height: 100%;float:right;padding: 10px;vertical-align: middle;" hidden></span>-->
+      
+    </div>
+
+    <div id="box_simple" class="box_simple">
+      <table style="width: 100%;">
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnSimpleToken" class="bn30toadvanced">&nbsp;&nbsp;Inserir Tokens</button>
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnSimpleRobot" class="bn30toadvanced">&nbsp;&nbsp;Escolher Bot</button>
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;color: #ebeb34;">
+          <br>
+          ««&nbsp;&nbsp;<span id="spanSimpleRobotName" style="color: #ebeb34;">Carregando, aguarde...</span>&nbsp;&nbsp;»»
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnSimpleRun" class="bn30toadvanced" style="visibility: hidden;"><img alt="" src="image/icon_run2.png" style="height: 30px;" hidden>&nbsp;&nbsp;Iniciar Bot</button>
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnSimpleSummaryBox" class="bn30toadvanced">&nbsp;&nbsp;Tabela de Trades</button>
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnSimpleLogsBox" class="bn30toadvanced">&nbsp;&nbsp;Logs de Operação</button>
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnhead_deriv" class="bn30toadvanced">&nbsp;Corretora</button>
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnhead_youtube" class="bn30toadvanced">&nbsp;Tutoriais</button>
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnSwitchToAdvanced" class="bn30toadvanced">&nbsp;Modo Avançado</button>
+          <br>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <div style="width: 60vw;margin: 0 auto;text-align: center;">
+            <span style="font-size: 10px;color: aliceblue;">Advertência de Risco e Isenção de Responsabilidade:<br> Esta plataforma opera via API na corretora Deriv, que por sua vez oferece derivativos complexos, como opções e contratos por diferença (“CFD”). Esses produtos podem não ser adequados para todos os clientes e negociá-los coloca seu investimento em risco. Por favor, certifique-se de compreender os seguintes riscos antes de negociar produtos Deriv: a) você pode perder parte ou todo o dinheiro que investe na negociação, b) se a sua negociação envolver conversão de moeda, as taxas de câmbio afetarão seus lucros e perdas. Você nunca deve negociar com dinheiro emprestado ou com dinheiro que não pode perder. A plataforma Ponto Bots se isenta de qualquer responsabilidade por perda de investimentos. <br>
+            As informações aqui fornecidas são apenas para fins educacionais e informativos e não devem ser interpretadas como aconselhamento financeiro. Negociar e investir nos mercados financeiros, incluindo derivados como opções, acarreta riscos inerentes. O desempenho passado não é indicativo de resultados futuros.<br>
+            Quaisquer estratégias, técnicas ou métodos discutidos são apenas para fins ilustrativos e podem não ser adequados para todos os indivíduos ou situações. Antes de tomar qualquer decisão financeira ou executar qualquer negociação, é imperativo realizar uma pesquisa completa e consultar um consultor financeiro ou profissional qualificado que possa avaliar suas circunstâncias específicas e tolerância ao risco.<br>
+            Ao acessar ou usar qualquer informação fornecida, você concorda que é o único responsável por quaisquer decisões de investimento ou ações tomadas e que nem o provedor de conteúdo nem quaisquer partes associadas serão responsáveis por quaisquer perdas ou danos decorrentes da sua confiança nas informações fornecidas.
+            </span>
+          </div>
+          <br>
+        </td></tr>
+      </table>
+    </div>
+
+    <div id="box_feed" class="box_feed">
+        <table style="width: 100%;">
+         <tr><td style="text-align: center;">
+            <br>
+            <button id="btnSwitchToSimple" class="bn30tosimple">Modo Simples</button>
+          </td></tr>
+         <tr><td style="text-align: center;">
+            <br>
+            <button class="bn30tosimple" onclick="document.getElementById('divPopupToken').style.display='block'">Inserir Tokens</button>
+          </td></tr> 
+        <tr><td style="text-align: center;">
+            <br>
+            <button class="bn30tosimple" onclick="document.getElementById('divPopupMoneyManagement').style.display='block'">Gerenciamento</button>
+          </td></tr>      
+        <tr><td style="text-align: center;">
+            <br>
+            <button class="bn30tosimple" onclick="document.getElementById('divPopupTarget').style.display='block'">Metas</button>
+          </td></tr>
+          <tr><td style="text-align: center;">
+          <br>
+          <button id="btnsimp_deriv" class="bn30tosimple">&nbsp;Corretora</button>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <button id="btnsimp_youtube" class="bn30tosimple">&nbsp;Tutoriais</button>
+        </td></tr>
+        <tr><td style="text-align: center;">
+          <br>
+          <span id="divdatetime" style="color: #dbdb6b; height: 100%;padding: 10px;vertical-align: middle;font-size:0.8em;"></span>
+        </td></tr>
+        
+          <tr><td>
+            <input type="number" placeholder="How many ticks for data ?" name="inpNOTicks" id="inpNOTicks" value="201" required hidden>
+          </td></tr>
+        </table>
+    </div>
+
+    <div id="box_data" class="box_data">
+        <div id="div_showdata" style="height: 30px;">
+            <table style="width: 100%;">
+                <tr style="text-align:left;">
+                    <td>
+                      <label id="lblMarket" style="color: #fff;" onclick="document.getElementById('divPopupMarket').style.display='block'"></label>&nbsp;|
+                        Selecionar Análise:
+                        <select id="selData" class="css-input" style="max-width: 150px;">
+                          <optgroup label="Digitos">
+                            <option value="digitstatistic">Estatística de Dígitos</option>
+                            <option value="thelast10digits" selected>Últimos 10 Dígitos</option>
+                            <option value="thelast20digitscaterzian">Diferença entre Dígitos</option>
+                            <option value="overvsunder">Over VS Under</option>
+                            <option value="evenvsodd">Par VS Ímpar</option>
+                            <option value="thelast20digitsevenodd">Par / Ímpar 20</option>
+                          </optgroup>
+                          <optgroup label="Ticks">
+                            <option value="thelast10ticks">Últimos 10 Ticks</option>
+                            <option value="thelast20tickworm">Worm 20</option>
+                            <option value="risevsfall">Sobe VS Desce</option>
+                            <option value="tick_Trisma">Tripla SMA Ticks</option>
+                            <option value="detail3ticks">Detalhe 3 Ticks</option>
+                          </optgroup>
+                          <optgroup label="Candles">
+                            <option value="thelast10candles">Últimas 10 Candles</option>
+                          </optgroup>
+                          </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="box_data_data" class="box_data_data">
+
+          <div id="div_digitstatistic" class="divData">
+            <table class="zebra">
+                <tr style="vertical-align: bottom;text-align:center;"><td rowspan="2" style="width: 7%;"><strong># Last ticks</strong></td><td colspan="10"><strong>Percentual de cada Dígito (%)</strong></td></tr>
+                <tr style="text-align:center;"><td style="width: 7.75%;">0</td><td style="width: 7.75%">1</td><td style="width: 7.75%">2</td><td style="width: 7.75%">3</td><td style="width: 7.75%">4</td><td style="width: 7.75%">5</td><td style="width: 7.75%">6</td><td style="width: 7.75%">7</td><td style="width: 7.75%">8</td><td style="width: 7.75%">9</td><td style="width: 7.75%"><span class="spanData" style="background-color: #f44336;">Menos</span></td><td style="width: 7.75%"><span class="spanData" style="background-color: #42a5f5;">Mais</span></td></tr>
+                <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#1&nbsp;:&nbsp;<input id="digitstatistic_1_noofticks" type="number" step="1" max="1000" value="10" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><span id="digitstatistic_1_0" class="spanData"></span></td><td><span id="digitstatistic_1_1" class="spanData"></span></td><td><span id="digitstatistic_1_2" class="spanData"></span></td><td><span id="digitstatistic_1_3" class="spanData"></span></td><td><span id="digitstatistic_1_4" class="spanData"></span></td><td><span id="digitstatistic_1_5" class="spanData"></span></td><td><span id="digitstatistic_1_6" class="spanData"></span></td><td><span id="digitstatistic_1_7" class="spanData"></span></td><td><span id="digitstatistic_1_8" class="spanData"></span></td><td><span id="digitstatistic_1_9" class="spanData"></span></td><td><span id="digitstatistic_1_least" class="spanData"></span></td><td><span id="digitstatistic_1_most" class="spanData"></span></td></tr>
+                <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#2&nbsp;:&nbsp;<input id="digitstatistic_2_noofticks" type="number" step="1" max="1000" value="25" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><span id="digitstatistic_2_0" class="spanData"></span></td><td><span id="digitstatistic_2_1" class="spanData"></span></td><td><span id="digitstatistic_2_2" class="spanData"></span></td><td><span id="digitstatistic_2_3" class="spanData"></span></td><td><span id="digitstatistic_2_4" class="spanData"></span></td><td><span id="digitstatistic_2_5" class="spanData"></span></td><td><span id="digitstatistic_2_6" class="spanData"></span></td><td><span id="digitstatistic_2_7" class="spanData"></span></td><td><span id="digitstatistic_2_8" class="spanData"></span></td><td><span id="digitstatistic_2_9" class="spanData"></span></td><td><span id="digitstatistic_2_least" class="spanData"></span></td><td><span id="digitstatistic_2_most" class="spanData"></span></td></tr>
+                <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#3&nbsp;:&nbsp;<input id="digitstatistic_3_noofticks" type="number" step="1" max="1000" value="50" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><span id="digitstatistic_3_0" class="spanData"></span></td><td><span id="digitstatistic_3_1" class="spanData"></span></td><td><span id="digitstatistic_3_2" class="spanData"></span></td><td><span id="digitstatistic_3_3" class="spanData"></span></td><td><span id="digitstatistic_3_4" class="spanData"></span></td><td><span id="digitstatistic_3_5" class="spanData"></span></td><td><span id="digitstatistic_3_6" class="spanData"></span></td><td><span id="digitstatistic_3_7" class="spanData"></span></td><td><span id="digitstatistic_3_8" class="spanData"></span></td><td><span id="digitstatistic_3_9" class="spanData"></span></td><td><span id="digitstatistic_3_least" class="spanData"></span></td><td><span id="digitstatistic_3_most" class="spanData"></span></td></tr>
+                <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#4&nbsp;:&nbsp;<input id="digitstatistic_4_noofticks" type="number" step="1" max="1000" value="75" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><span id="digitstatistic_4_0" class="spanData"></span></td><td><span id="digitstatistic_4_1" class="spanData"></span></td><td><span id="digitstatistic_4_2" class="spanData"></span></td><td><span id="digitstatistic_4_3" class="spanData"></span></td><td><span id="digitstatistic_4_4" class="spanData"></span></td><td><span id="digitstatistic_4_5" class="spanData"></span></td><td><span id="digitstatistic_4_6" class="spanData"></span></td><td><span id="digitstatistic_4_7" class="spanData"></span></td><td><span id="digitstatistic_4_8" class="spanData"></span></td><td><span id="digitstatistic_4_9" class="spanData"></span></td><td><span id="digitstatistic_4_least" class="spanData"></span></td><td><span id="digitstatistic_4_most" class="spanData"></span></td></tr>
+                <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#5&nbsp;:&nbsp;<input id="digitstatistic_5_noofticks" type="number" step="1" max="1000" value="100" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><span id="digitstatistic_5_0" class="spanData"></span></td><td><span id="digitstatistic_5_1" class="spanData"></span></td><td><span id="digitstatistic_5_2" class="spanData"></span></td><td><span id="digitstatistic_5_3" class="spanData"></span></td><td><span id="digitstatistic_5_4" class="spanData"></span></td><td><span id="digitstatistic_5_5" class="spanData"></span></td><td><span id="digitstatistic_5_6" class="spanData"></span></td><td><span id="digitstatistic_5_7" class="spanData"></span></td><td><span id="digitstatistic_5_8" class="spanData"></span></td><td><span id="digitstatistic_5_9" class="spanData"></span></td><td><span id="digitstatistic_5_least" class="spanData"></span></td><td><span id="digitstatistic_5_most" class="spanData"></span></td></tr>
+                <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#6&nbsp;:&nbsp;<input id="digitstatistic_6_noofticks" type="number" step="1" max="1000" value="200" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><span id="digitstatistic_6_0" class="spanData"></span></td><td><span id="digitstatistic_6_1" class="spanData"></span></td><td><span id="digitstatistic_6_2" class="spanData"></span></td><td><span id="digitstatistic_6_3" class="spanData"></span></td><td><span id="digitstatistic_6_4" class="spanData"></span></td><td><span id="digitstatistic_6_5" class="spanData"></span></td><td><span id="digitstatistic_6_6" class="spanData"></span></td><td><span id="digitstatistic_6_7" class="spanData"></span></td><td><span id="digitstatistic_6_8" class="spanData"></span></td><td><span id="digitstatistic_6_9" class="spanData"></span></td><td><span id="digitstatistic_6_least" class="spanData"></span></td><td><span id="digitstatistic_6_most" class="spanData"></span></td></tr>
+                <tr style="text-align:right;"><td style="text-align: right;">Summary >></td><td><span id="digitstatistic_summ_0" class="spanData"></span></td><td><span id="digitstatistic_summ_1" class="spanData"></span></td><td><span id="digitstatistic_summ_2" class="spanData"></span></td><td><span id="digitstatistic_summ_3" class="spanData"></span></td><td><span id="digitstatistic_summ_4" class="spanData"></span></td><td><span id="digitstatistic_summ_5" class="spanData"></span></td><td><span id="digitstatistic_summ_6" class="spanData"></span></td><td><span id="digitstatistic_summ_7" class="spanData"></span></td><td><span id="digitstatistic_summ_8" class="spanData"></span></td><td><span id="digitstatistic_summ_9" class="spanData"></span></td><td><span id="digitstatistic_summ_least" class="spanData"></span></td><td><span id="digitstatistic_summ_most" class="spanData"></span></td></tr>
+            </table>
+        </div>
+          
+          <div id="div_thelast10digits" class="divData">
+              <table class="zebra">
+                  <tr style="vertical-align: bottom;text-align:center;"><td rowspan="2" style="width: 7%; color: #fff;"><strong></strong></td><td colspan="10"><strong># Dígito à partir do útimo</strong></td></tr>
+                  <tr style="text-align:center;"><td style="width: 9.3%">10º</td><td style="width: 9.3%">9º</td><td style="width: 9.3%">8º</td><td style="width: 9.3%">7º</td><td style="width: 9.3%">6º</td><td style="width: 9.3%">5º</td><td style="width: 9.3%">4º</td><td style="width: 9.3%">3º</td><td style="width: 9.3%">2º</td><td style="width: 9.3%">1º</td></tr>
+                  <tr style="text-align:left;"><td>Dígito</td><td><span id="thelast10digits_digit_10" class="spanData"></span></td><td><span id="thelast10digits_digit_9" class="spanData"></span></td><td><span id="thelast10digits_digit_8" class="spanData"></span></td><td><span id="thelast10digits_digit_7" class="spanData"></span></td><td><span id="thelast10digits_digit_6" class="spanData"></span></td><td><span id="thelast10digits_digit_5" class="spanData"></span></td><td><span id="thelast10digits_digit_4" class="spanData"></span></td><td><span id="thelast10digits_digit_3" class="spanData"></span></td><td><span id="thelast10digits_digit_2" class="spanData"></span></td><td><span id="thelast10digits_digit_1" class="spanData"></span></td></tr>
+                  <tr style="text-align:left;"><td>Dígito ↑↓</td><td><span id="thelast10digits_digitmove_10" class="spanData"></span></td><td><span id="thelast10digits_digitmove_9" class="spanData"></span></td><td><span id="thelast10digits_digitmove_8" class="spanData"></span></td><td><span id="thelast10digits_digitmove_7" class="spanData"></span></td><td><span id="thelast10digits_digitmove_6" class="spanData"></span></td><td><span id="thelast10digits_digitmove_5" class="spanData"></span></td><td><span id="thelast10digits_digitmove_4" class="spanData"></span></td><td><span id="thelast10digits_digitmove_3" class="spanData"></span></td><td><span id="thelast10digits_digitmove_2" class="spanData"></span></td><td><span id="thelast10digits_digitmove_1" class="spanData"></span></td></tr>
+                  <tr style="text-align:left;"><td>Dígito +-</td><td><span id="thelast10digits_change_10" class="spanData"></span></td><td><span id="thelast10digits_change_9" class="spanData"></span></td><td><span id="thelast10digits_change_8" class="spanData"></span></td><td><span id="thelast10digits_change_7" class="spanData"></span></td><td><span id="thelast10digits_change_6" class="spanData"></span></td><td><span id="thelast10digits_change_5" class="spanData"></span></td><td><span id="thelast10digits_change_4" class="spanData"></span></td><td><span id="thelast10digits_change_3" class="spanData"></span></td><td><span id="thelast10digits_change_2" class="spanData"></span></td><td><span id="thelast10digits_change_1" class="spanData"></span></td></tr>
+                  <tr style="text-align:left;"><td>Tick ↑↓</td><td><span id="thelast10digits_tickmove_10" class="spanData"></span></td><td><span id="thelast10digits_tickmove_9" class="spanData"></span></td><td><span id="thelast10digits_tickmove_8" class="spanData"></span></td><td><span id="thelast10digits_tickmove_7" class="spanData"></span></td><td><span id="thelast10digits_tickmove_6" class="spanData"></span></td><td><span id="thelast10digits_tickmove_5" class="spanData"></span></td><td><span id="thelast10digits_tickmove_4" class="spanData"></span></td><td><span id="thelast10digits_tickmove_3" class="spanData"></span></td><td><span id="thelast10digits_tickmove_2" class="spanData"></span></td><td><span id="thelast10digits_tickmove_1" class="spanData"></span></td></tr>
+                  <tr style="text-align:left;"><td>Tick +-</td><td><span id="thelast10digits_digitgraph_10" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_9" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_8" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_7" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_6" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_5" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_4" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_3" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_2" class="spanData"></span></td><td><span id="thelast10digits_digitgraph_1" class="spanData"></span></td></tr>
+                </table>
+                <table style="width: 100%;">
+                  <tr><td style="width: 50%;">
+                    <div id="chart_container_last10dig_digit" style="position: relative; width: 100%; height: 150px;">
+                      <canvas id="chart_last10dig_digit"></canvas>
+                    </div>
+                  </td>
+                  <td>
+                    <div id="chart_container_last10dig_change" style="position: relative; width: 100%; height: 150px;">
+                      <canvas id="chart_last10dig_change"></canvas>
+                    </div>
+                  </td></tr>
+                </table>
+            </div>
+
+            
+
+            <div id="div_thelast20digitscaterzian" class="divData">
+              <table class="zebra">
+                <tr style="vertical-align: bottom;text-align:center;"><td colspan="20"><strong>Diferença entre números :: # Dígito</strong></td></tr>
+                <tr style="text-align:center;"><td style="width: 5%">20º</td><td style="width: 5%">19º</td><td style="width: 5%">18º</td><td style="width: 5%">17º</td><td style="width: 5%">16º</td><td style="width: 5%">15º</td><td style="width: 5%">14º</td><td style="width: 5%">13º</td><td style="width: 5%">12º</td><td style="width: 5%">11º</td><td style="width: 5%">10º</td><td style="width: 5%">9º</td><td style="width: 5%">8º</td><td style="width: 5%">7º</td><td style="width: 5%">6º</td><td style="width: 5%">5º</td><td style="width: 5%">4º</td><td style="width: 5%">3º</td><td style="width: 5%">2º</td><td style="width: 5%">1º</td></tr>
+                <tr style="text-align:left;"><td><span id="thelast20digits_digitcater_20" class="spanData"></span></td><td><span id="thelast20digits_digitcater_19" class="spanData"></span></td><td><span id="thelast20digits_digitcater_18" class="spanData"></span></td><td><span id="thelast20digits_digitcater_17" class="spanData"></span></td><td><span id="thelast20digits_digitcater_16" class="spanData"></span></td><td><span id="thelast20digits_digitcater_15" class="spanData"></span></td><td><span id="thelast20digits_digitcater_14" class="spanData"></span></td><td><span id="thelast20digits_digitcater_13" class="spanData"></span></td><td><span id="thelast20digits_digitcater_12" class="spanData"></span></td><td><span id="thelast20digits_digitcater_11" class="spanData"></span></td><td><span id="thelast20digits_digitcater_10" class="spanData"></span></td><td><span id="thelast20digits_digitcater_9" class="spanData"></span></td><td><span id="thelast20digits_digitcater_8" class="spanData"></span></td><td><span id="thelast20digits_digitcater_7" class="spanData"></span></td><td><span id="thelast20digits_digitcater_6" class="spanData"></span></td><td><span id="thelast20digits_digitcater_5" class="spanData"></span></td><td><span id="thelast20digits_digitcater_4" class="spanData"></span></td><td><span id="thelast20digits_digitcater_3" class="spanData"></span></td><td><span id="thelast20digits_digitcater_2" class="spanData"></span></td><td><span id="thelast20digits_digitcater_1" class="spanData"></span></td></tr>
+              </table>
+              <div id="chart_container_thelast20digitscaterzian" style="position: relative; width: 100%;height: 225px;">
+                <canvas id="chart20cater"></canvas>
+              </div>
+            </div>
+
+            <div id="div_thelast20digitsevenodd" class="divData">
+              <table class="zebra">
+                <tr style="vertical-align: bottom;text-align:center;"><td colspan="20"><strong>Dígito Par / Ímpar :: # Dígito</strong></td></tr>
+                <tr style="text-align:center;"><td style="width: 5%">20º</td><td style="width: 5%">19º</td><td style="width: 5%">18º</td><td style="width: 5%">17º</td><td style="width: 5%">16º</td><td style="width: 5%">15º</td><td style="width: 5%">14º</td><td style="width: 5%">13º</td><td style="width: 5%">12º</td><td style="width: 5%">11º</td><td style="width: 5%">10º</td><td style="width: 5%">9º</td><td style="width: 5%">8º</td><td style="width: 5%">7º</td><td style="width: 5%">6º</td><td style="width: 5%">5º</td><td style="width: 5%">4º</td><td style="width: 5%">3º</td><td style="width: 5%">2º</td><td style="width: 5%">1º</td></tr>
+                <tr style="text-align:left;"><td><span id="thelast20digits_digitevenodd_20" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_19" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_18" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_17" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_16" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_15" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_14" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_13" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_12" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_11" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_10" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_9" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_8" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_7" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_6" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_5" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_4" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_3" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_2" class="spanData"></span></td><td><span id="thelast20digits_digitevenodd_1" class="spanData"></span></td></tr>
+              </table>
+            </div>
+
+            <div id="div_evenvsodd" class="divData">
+                <table class="zebra">
+                    <tr style="vertical-align: bottom;text-align:center;"><td style="width: 7%; color: #fff;"><strong># Últimos Ticks</strong></td><td><strong><span style="color: #42a5f5;">PAR(%)</span> vs <span style="color: #f44336;">ÍMPAR(%)</span></strong></td></tr>
+                    <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#1&nbsp;:&nbsp;<input id="evenvsodd_1_noofticks" type="number" step="1" max="1000" value="10" style="width: 45px; border-radius: 3px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="evenvsodd_1_even" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="evenvsodd_1_odd" class="spanData" style="background-color: #f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                    <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#2&nbsp;:&nbsp;<input id="evenvsodd_2_noofticks" type="number" step="1" max="1000" value="25" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="evenvsodd_2_even" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="evenvsodd_2_odd" class="spanData" style="background-color: #f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                    <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#3&nbsp;:&nbsp;<input id="evenvsodd_3_noofticks" type="number" step="1" max="1000" value="50" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="evenvsodd_3_even" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="evenvsodd_3_odd" class="spanData" style="background-color: #f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                    <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#4&nbsp;:&nbsp;<input id="evenvsodd_4_noofticks" type="number" step="1" max="1000" value="75" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="evenvsodd_4_even" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="evenvsodd_4_odd" class="spanData" style="background-color: #f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                    <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#5&nbsp;:&nbsp;<input id="evenvsodd_5_noofticks" type="number" step="1" max="1000" value="100" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="evenvsodd_5_even" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="evenvsodd_5_odd" class="spanData" style="background-color: #f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                    <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#6&nbsp;:&nbsp;<input id="evenvsodd_6_noofticks" type="number" step="1" max="1000" value="200" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="evenvsodd_6_even" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="evenvsodd_6_odd" class="spanData" style="background-color: #f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                </table>
+            </div>
+
+            <div id="div_overvsunder" class="divData">
+              <table class="zebra">
+                  <tr style="vertical-align: bottom; border: 1px solid #fff;text-align:center;"><td style="width: 7%; color: #fff;"><strong># Últimos Ticks</strong></td><td style="width: 7%;"></td><td><strong><span style="color: #42a5f5;">OVER(%)</span> vs <span style="color: #f44336;">UNDER(%)</span></strong></td></tr>
+                  <tr><td rowspan="2"><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#1&nbsp;:&nbsp;<input id="overvsunder_1_noofticks" type="number" step="1" max="1000" value="50" style="width: 45px; border-radius: 3px;" title="min:1, max:1000">&nbsp;ticks</div></td><td style="text-align: right;"><div style="display: flex; flex-direction: row; float: right; text-align: right; color: #fff;">Over&nbsp;<input id="overvsunder_1_overdigit" type="number" step="1" min="0" max="8" value="4" style="width: 45px; border-radius: 3px;" title="min:0, max:8"></div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="overvsunder_1_over" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;">%</span></div></td></tr>
+                  <tr><td style="text-align: right;"><div style="display: flex; flex-direction: row; float: right; text-align: right; color: #fff;">Under&nbsp;<input id="overvsunder_1_underdigit" type="number" step="1" min="1" max="9" value="5" style="width: 45px; border-radius: 3px;" title="min:1, max:9"></div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="overvsunder_1_under" class="spanData" style="background-color: #f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;">%</span></div></td></tr>
+                  <tr><td rowspan="2"><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#2&nbsp;:&nbsp;<input id="overvsunder_2_noofticks" type="number" step="1" max="1000" value="100" style="width: 45px; border-radius: 3px;" title="min:1, max:1000">&nbsp;ticks</div></td><td style="text-align: right;"><div style="display: flex; flex-direction: row; float: right; text-align: right; color: #fff;">Over&nbsp;<input id="overvsunder_2_overdigit" type="number" step="1" min="0" max="8" value="4" style="width: 45px; border-radius: 3px;" title="min:0, max:8"></div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="overvsunder_2_over" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;">%</span></div></td></tr>
+                  <tr><td style="text-align: right;"><div style="display: flex; flex-direction: row; float: right; text-align: right; color: #fff;">Under&nbsp;<input id="overvsunder_2_underdigit" type="number" step="1" min="1" max="9" value="5" style="width: 45px; border-radius: 3px;" title="min:1, max:9"></div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="overvsunder_2_under" class="spanData" style="background-color: #f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;">%</span></div></td></tr>
+              </table>
+          </div>
+
+            <div id="div_thelast10ticks" class="divData">
+                <table class="zebra">
+                    <tr style="vertical-align: bottom;text-align:center;"><td rowspan="2" style="width: 7%; color: #fff;"><strong></strong></td><td colspan="10"><strong># Tick à partir do último</strong></td></tr>
+                    <tr style="text-align:center;"><td style="width: 9.3%">10º</td><td style="width: 9.3%">9º</td><td style="width: 9.3%">8º</td><td style="width: 9.3%">7º</td><td style="width: 9.3%">6º</td><td style="width: 9.3%">5º</td><td style="width: 9.3%">4º</td><td style="width: 9.3%">3º</td><td style="width: 9.3%">2º</td><td style="width: 9.3%">1º</td></tr>
+                    <tr style="text-align:left;"><td>Tick</td><td><span id="thelast10ticks_tick_10" class="spanData"></span></td><td><span id="thelast10ticks_tick_9" class="spanData"></span></td><td><span id="thelast10ticks_tick_8" class="spanData"></span></td><td><span id="thelast10ticks_tick_7" class="spanData"></span></td><td><span id="thelast10ticks_tick_6" class="spanData"></span></td><td><span id="thelast10ticks_tick_5" class="spanData"></span></td><td><span id="thelast10ticks_tick_4" class="spanData"></span></td><td><span id="thelast10ticks_tick_3" class="spanData"></span></td><td><span id="thelast10ticks_tick_2" class="spanData"></span></td><td><span id="thelast10ticks_tick_1" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>Move</td><td><span id="thelast10ticks_move_10" class="spanData"></span></td><td><span id="thelast10ticks_move_9" class="spanData"></span></td><td><span id="thelast10ticks_move_8" class="spanData"></span></td><td><span id="thelast10ticks_move_7" class="spanData"></span></td><td><span id="thelast10ticks_move_6" class="spanData"></span></td><td><span id="thelast10ticks_move_5" class="spanData"></span></td><td><span id="thelast10ticks_move_4" class="spanData"></span></td><td><span id="thelast10ticks_move_3" class="spanData"></span></td><td><span id="thelast10ticks_move_2" class="spanData"></span></td><td><span id="thelast10ticks_move_1" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>Worm</td><td><span id="thelast10ticks_worm_10" class="spanData"></span></td><td><span id="thelast10ticks_worm_9" class="spanData"></span></td><td><span id="thelast10ticks_worm_8" class="spanData"></span></td><td><span id="thelast10ticks_worm_7" class="spanData"></span></td><td><span id="thelast10ticks_worm_6" class="spanData"></span></td><td><span id="thelast10ticks_worm_5" class="spanData"></span></td><td><span id="thelast10ticks_worm_4" class="spanData"></span></td><td><span id="thelast10ticks_worm_3" class="spanData"></span></td><td><span id="thelast10ticks_worm_2" class="spanData"></span></td><td><span id="thelast10ticks_worm_1" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>Sentiment</td><td><span id="thelast10ticks_sentiment_10" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_9" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_8" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_7" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_6" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_5" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_4" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_3" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_2" class="spanData"></span></td><td><span id="thelast10ticks_sentiment_1" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>Diferença</td><td><span id="thelast10ticks_change_10" class="spanData"></span></td><td><span id="thelast10ticks_change_9" class="spanData"></span></td><td><span id="thelast10ticks_change_8" class="spanData"></span></td><td><span id="thelast10ticks_change_7" class="spanData"></span></td><td><span id="thelast10ticks_change_6" class="spanData"></span></td><td><span id="thelast10ticks_change_5" class="spanData"></span></td><td><span id="thelast10ticks_change_4" class="spanData"></span></td><td><span id="thelast10ticks_change_3" class="spanData"></span></td><td><span id="thelast10ticks_change_2" class="spanData"></span></td><td><span id="thelast10ticks_change_1" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>%</td><td><span id="thelast10ticks_%_10" class="spanData"></span></td><td><span id="thelast10ticks_%_9" class="spanData"></span></td><td><span id="thelast10ticks_%_8" class="spanData"></span></td><td><span id="thelast10ticks_%_7" class="spanData"></span></td><td><span id="thelast10ticks_%_6" class="spanData"></span></td><td><span id="thelast10ticks_%_5" class="spanData"></span></td><td><span id="thelast10ticks_%_4" class="spanData"></span></td><td><span id="thelast10ticks_%_3" class="spanData"></span></td><td><span id="thelast10ticks_%_2" class="spanData"></span></td><td><span id="thelast10ticks_%_1" class="spanData"></span></td></tr>
+                </table>
+                <table style="width: 100%;">
+                  <tr><td style="width: 50%;">
+                    <div id="chart_container_last10tick_tick" style="position: relative; width: 100%; height: 150px;">
+                      <canvas id="chart_last10tick_tick"></canvas>
+                    </div>
+                  </td>
+                  <td>
+                    <div id="chart_container_last10tick_change" style="position: relative; width: 100%; height: 150px;">
+                      <canvas id="chart_last10tick_change"></canvas>
+                    </div>
+                  </td></tr>
+                </table>
+            </div>
+
+            <div id="div_thelast20tickworm" class="divData">
+              <table class="zebra">
+                <tr style="vertical-align: bottom;text-align:center;"><td colspan="20"><strong>Ticks Worm</strong></td></tr>
+                <tr style="text-align:center;"><td></td><td style="width: 5%">20º</td><td style="width: 5%">19º</td><td style="width: 5%">18º</td><td style="width: 5%">17º</td><td style="width: 5%">16º</td><td style="width: 5%">15º</td><td style="width: 5%">14º</td><td style="width: 5%">13º</td><td style="width: 5%">12º</td><td style="width: 5%">11º</td><td style="width: 5%">10º</td><td style="width: 5%">9º</td><td style="width: 5%">8º</td><td style="width: 5%">7º</td><td style="width: 5%">6º</td><td style="width: 5%">5º</td><td style="width: 5%">4º</td><td style="width: 5%">3º</td><td style="width: 5%">2º</td><td style="width: 5%">1º</td></tr>
+                <tr style="text-align:left;"><td>History (head):</td><td><span id="thelast20tickworm_history_20" class="spanData"></span></td><td><span id="thelast20tickworm_history_19" class="spanData"></span></td><td><span id="thelast20tickworm_history_18" class="spanData"></span></td><td><span id="thelast20tickworm_history_17" class="spanData"></span></td><td><span id="thelast20tickworm_history_16" class="spanData"></span></td><td><span id="thelast20tickworm_history_15" class="spanData"></span></td><td><span id="thelast20tickworm_history_14" class="spanData"></span></td><td><span id="thelast20tickworm_history_13" class="spanData"></span></td><td><span id="thelast20tickworm_history_12" class="spanData"></span></td><td><span id="thelast20tickworm_history_11" class="spanData"></span></td><td><span id="thelast20tickworm_history_10" class="spanData"></span></td><td><span id="thelast20tickworm_history_9" class="spanData"></span></td><td><span id="thelast20tickworm_history_8" class="spanData"></span></td><td><span id="thelast20tickworm_history_7" class="spanData"></span></td><td><span id="thelast20tickworm_history_6" class="spanData"></span></td><td><span id="thelast20tickworm_history_5" class="spanData"></span></td><td><span id="thelast20tickworm_history_4" class="spanData"></span></td><td><span id="thelast20tickworm_history_3" class="spanData"></span></td><td><span id="thelast20tickworm_history_2" class="spanData"></span></td><td><span id="thelast20tickworm_history_1" class="spanData"></span></td></tr>
+                <tr style="text-align:left;"><td style="text-align: right;">Current:</td><td><span id="thelast20tickworm_current_20" class="spanData"></span></td><td><span id="thelast20tickworm_current_19" class="spanData"></span></td><td><span id="thelast20tickworm_current_18" class="spanData"></span></td><td><span id="thelast20tickworm_current_17" class="spanData"></span></td><td><span id="thelast20tickworm_current_16" class="spanData"></span></td><td><span id="thelast20tickworm_current_15" class="spanData"></span></td><td><span id="thelast20tickworm_current_14" class="spanData"></span></td><td><span id="thelast20tickworm_current_13" class="spanData"></span></td><td><span id="thelast20tickworm_current_12" class="spanData"></span></td><td><span id="thelast20tickworm_current_11" class="spanData"></span></td><td><span id="thelast20tickworm_current_10" class="spanData"></span></td><td><span id="thelast20tickworm_current_9" class="spanData"></span></td><td><span id="thelast20tickworm_current_8" class="spanData"></span></td><td><span id="thelast20tickworm_current_7" class="spanData"></span></td><td><span id="thelast20tickworm_current_6" class="spanData"></span></td><td><span id="thelast20tickworm_current_5" class="spanData"></span></td><td><span id="thelast20tickworm_current_4" class="spanData"></span></td><td><span id="thelast20tickworm_current_3" class="spanData"></span></td><td><span id="thelast20tickworm_current_2" class="spanData"></span></td><td><span id="thelast20tickworm_current_1" class="spanData"></span></td></tr>
+              </table>
+              <div id="chart_container_thelast20tickworm" style="position: relative; width: 100%;height: 225px;">
+                <canvas id="chart20tickworm"></canvas>
+              </div>
+            </div>
+
+            <div id="div_risevsfall" class="divData">
+              <table class="zebra">
+                  <tr style="vertical-align: bottom;text-align:center;"><td style="width: 7%; color: #fff;"><strong># Last ticks</strong></td><td><strong><span style="color: #42a5f5;">SOBE(%)</span> vs <span style="color: #f44336;">DESCE(%)</span></strong></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#1&nbsp;:&nbsp;<input id="risevsfall_1_noofticks" type="number" step="1" max="1000" value="10" style="width: 45px; border-radius: 3px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="risevsfall_1_rise" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="risevsfall_1_fall" class="spanData" style="background-color:#f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#2&nbsp;:&nbsp;<input id="risevsfall_2_noofticks" type="number" step="1" max="1000" value="25" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="risevsfall_2_rise" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="risevsfall_2_fall" class="spanData" style="background-color:#f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#3&nbsp;:&nbsp;<input id="risevsfall_3_noofticks" type="number" step="1" max="1000" value="50" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="risevsfall_3_rise" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="risevsfall_3_fall" class="spanData" style="background-color:#f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#4&nbsp;:&nbsp;<input id="risevsfall_4_noofticks" type="number" step="1" max="1000" value="75" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="risevsfall_4_rise" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="risevsfall_4_fall" class="spanData" style="background-color:#f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#5&nbsp;:&nbsp;<input id="risevsfall_5_noofticks" type="number" step="1" max="1000" value="100" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="risevsfall_5_rise" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="risevsfall_5_fall" class="spanData" style="background-color:#f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Row#6&nbsp;:&nbsp;<input id="risevsfall_6_noofticks" type="number" step="1" max="1000" value="200" style="width: 45px;" title="min:1, max:1000">&nbsp;ticks</div></td><td><div style="width: 100%; display: flex; -ms-display: flexbox;"><span id="risevsfall_6_rise" class="spanData" style="background-color:#42a5f5; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span><span id="risevsfall_6_fall" class="spanData" style="background-color:#f44336; font-size: 15px; line-height: 30px; display: inline-block; vertical-align: middle; text-align: center; transition: all 0.5s ease-out;"></span></div></td></tr>
+              </table>
+            </div>
+
+            <div id="div_tick_Trisma" class="divData">
+              <table class="zebra">
+                <tr style="vertical-align: bottom;text-align:center;"><td colspan="20"><strong>[Ticks] Tripla Média Móvel Simples (SMA)</strong></td></tr>
+                <tr style="text-align:center;"><td>Período</td><td style="width: 5%">20º</td><td style="width: 5%">19º</td><td style="width: 5%">18º</td><td style="width: 5%">17º</td><td style="width: 5%">16º</td><td style="width: 5%">15º</td><td style="width: 5%">14º</td><td style="width: 5%">13º</td><td style="width: 5%">12º</td><td style="width: 5%">11º</td><td style="width: 5%">10º</td><td style="width: 5%">9º</td><td style="width: 5%">8º</td><td style="width: 5%">7º</td><td style="width: 5%">6º</td><td style="width: 5%">5º</td><td style="width: 5%">4º</td><td style="width: 5%">3º</td><td style="width: 5%">2º</td><td style="width: 5%">1º</td></tr>
+                <tr style="text-align:right;"><td style="text-align:right;"><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">SMA#1&nbsp;:&nbsp;<input id="inpTickTrisma_period1" type="number" step="1" max="200" value="20" style="width: 45px;" title="min:1, max:200"></div></td><td><span id="tick_sma1_20" class="spanData"></span></td><td><span id="tick_sma1_19" class="spanData"></span></td><td><span id="tick_sma1_18" class="spanData"></span></td><td><span id="tick_sma1_17" class="spanData"></span></td><td><span id="tick_sma1_16" class="spanData"></span></td><td><span id="tick_sma1_15" class="spanData"></span></td><td><span id="tick_sma1_14" class="spanData"></span></td><td><span id="tick_sma1_13" class="spanData"></span></td><td><span id="tick_sma1_12" class="spanData"></span></td><td><span id="tick_sma1_11" class="spanData"></span></td><td><span id="tick_sma1_10" class="spanData"></span></td><td><span id="tick_sma1_9" class="spanData"></span></td><td><span id="tick_sma1_8" class="spanData"></span></td><td><span id="tick_sma1_7" class="spanData"></span></td><td><span id="tick_sma1_6" class="spanData"></span></td><td><span id="tick_sma1_5" class="spanData"></span></td><td><span id="tick_sma1_4" class="spanData"></span></td><td><span id="tick_sma1_3" class="spanData"></span></td><td><span id="tick_sma1_2" class="spanData"></span></td><td><span id="tick_sma1_1" class="spanData"></span></td></tr>
+                <tr style="text-align:right;"><td style="text-align:right;"><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">SMA#2&nbsp;:&nbsp;<input id="inpTickTrisma_period2" type="number" step="1" max="200" value="50" style="width: 45px;" title="min:1, max:200"></div></td><td><span id="tick_sma2_20" class="spanData"></span></td><td><span id="tick_sma2_19" class="spanData"></span></td><td><span id="tick_sma2_18" class="spanData"></span></td><td><span id="tick_sma2_17" class="spanData"></span></td><td><span id="tick_sma2_16" class="spanData"></span></td><td><span id="tick_sma2_15" class="spanData"></span></td><td><span id="tick_sma2_14" class="spanData"></span></td><td><span id="tick_sma2_13" class="spanData"></span></td><td><span id="tick_sma2_12" class="spanData"></span></td><td><span id="tick_sma2_11" class="spanData"></span></td><td><span id="tick_sma2_10" class="spanData"></span></td><td><span id="tick_sma2_9" class="spanData"></span></td><td><span id="tick_sma2_8" class="spanData"></span></td><td><span id="tick_sma2_7" class="spanData"></span></td><td><span id="tick_sma2_6" class="spanData"></span></td><td><span id="tick_sma2_5" class="spanData"></span></td><td><span id="tick_sma2_4" class="spanData"></span></td><td><span id="tick_sma2_3" class="spanData"></span></td><td><span id="tick_sma2_2" class="spanData"></span></td><td><span id="tick_sma2_1" class="spanData"></span></td></tr>
+                <tr style="text-align:right;"><td style="text-align:right;"><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">SMA#3&nbsp;:&nbsp;<input id="inpTickTrisma_period3" type="number" step="1" max="200" value="200" style="width: 45px;" title="min:1, max:200"></div></td><td><span id="tick_sma3_20" class="spanData"></span></td><td><span id="tick_sma3_19" class="spanData"></span></td><td><span id="tick_sma3_18" class="spanData"></span></td><td><span id="tick_sma3_17" class="spanData"></span></td><td><span id="tick_sma3_16" class="spanData"></span></td><td><span id="tick_sma3_15" class="spanData"></span></td><td><span id="tick_sma3_14" class="spanData"></span></td><td><span id="tick_sma3_13" class="spanData"></span></td><td><span id="tick_sma3_12" class="spanData"></span></td><td><span id="tick_sma3_11" class="spanData"></span></td><td><span id="tick_sma3_10" class="spanData"></span></td><td><span id="tick_sma3_9" class="spanData"></span></td><td><span id="tick_sma3_8" class="spanData"></span></td><td><span id="tick_sma3_7" class="spanData"></span></td><td><span id="tick_sma3_6" class="spanData"></span></td><td><span id="tick_sma3_5" class="spanData"></span></td><td><span id="tick_sma3_4" class="spanData"></span></td><td><span id="tick_sma3_3" class="spanData"></span></td><td><span id="tick_sma3_2" class="spanData"></span></td><td><span id="tick_sma3_1" class="spanData"></span></td></tr>
+              </table>
+              <div id="chart_container_ticktrisma" style="position: relative; width: 100%;height: 220px;">
+                <canvas id="chartticktrisma"></canvas>
+              </div>
+            </div>
+
+            <div id="div_detail3ticks" class="divData">
+              <table class="zebra">
+                <tr style="vertical-align: bottom;text-align:center;"><td colspan="2"></td><td colspan="12"><strong>Ticks Detalhe :: # String</strong></td></tr>
+                <tr style="text-align:center;"><td style="width: 90px;"></td><td style="width: 50px;"></td><td>1º</td><td>2º</td><td>3º</td><td>4º</td><td>5º</td><td>6º</td><td>7º</td><td>8º</td><td>9º</td><td>10º</td><td>11º</td><td>12º</td></tr>
+                <tr style="text-align:left;"><td style="text-align: right;">1st last tick : </td><td><span id="detail3ticks_1_tick" class="spanData"></span></td><td><span id="detail3ticks_1_1" class="spanData"></span></td><td><span id="detail3ticks_1_2" class="spanData"></span></td><td><span id="detail3ticks_1_3" class="spanData"></span></td><td><span id="detail3ticks_1_4" class="spanData"></span></td><td><span id="detail3ticks_1_5" class="spanData"></span></td><td><span id="detail3ticks_1_6" class="spanData"></span></td><td><span id="detail3ticks_1_7" class="spanData"></span></td><td><span id="detail3ticks_1_8" class="spanData"></span></td><td><span id="detail3ticks_1_9" class="spanData"></span></td><td><span id="detail3ticks_1_10" class="spanData"></span></td><td><span id="detail3ticks_1_11" class="spanData"></span></td><td><span id="detail3ticks_1_12" class="spanData"></span></td></tr>
+                <tr style="text-align:left;"><td style="text-align: right;">2nd last tick : </td><td><span id="detail3ticks_2_tick" class="spanData"></span></td><td><span id="detail3ticks_2_1" class="spanData"></span></td><td><span id="detail3ticks_2_2" class="spanData"></span></td><td><span id="detail3ticks_2_3" class="spanData"></span></td><td><span id="detail3ticks_2_4" class="spanData"></span></td><td><span id="detail3ticks_2_5" class="spanData"></span></td><td><span id="detail3ticks_2_6" class="spanData"></span></td><td><span id="detail3ticks_2_7" class="spanData"></span></td><td><span id="detail3ticks_2_8" class="spanData"></span></td><td><span id="detail3ticks_2_9" class="spanData"></span></td><td><span id="detail3ticks_2_10" class="spanData"></span></td><td><span id="detail3ticks_2_11" class="spanData"></span></td><td><span id="detail3ticks_2_12" class="spanData"></span></td></tr>
+                <tr style="text-align:left;"><td style="text-align: right;">3rd last tick : </td><td><span id="detail3ticks_3_tick" class="spanData"></span></td><td><span id="detail3ticks_3_1" class="spanData"></span></td><td><span id="detail3ticks_3_2" class="spanData"></span></td><td><span id="detail3ticks_3_3" class="spanData"></span></td><td><span id="detail3ticks_3_4" class="spanData"></span></td><td><span id="detail3ticks_3_5" class="spanData"></span></td><td><span id="detail3ticks_3_6" class="spanData"></span></td><td><span id="detail3ticks_3_7" class="spanData"></span></td><td><span id="detail3ticks_3_8" class="spanData"></span></td><td><span id="detail3ticks_3_9" class="spanData"></span></td><td><span id="detail3ticks_3_10" class="spanData"></span></td><td><span id="detail3ticks_3_11" class="spanData"></span></td><td><span id="detail3ticks_3_12" class="spanData"></span></td></tr>
+              </table>
+            </div>
+            
+            
+            <div id="div_thelast10candles" class="divData">
+                <table class="zebra">
+                    <tr style="vertical-align: bottom;text-align:center;"><td rowspan="2" style="width: 100px; color: #fff;"><strong>Candle<br>Intervalo</strong></td><td colspan="10"><strong># Candle from the last</strong></td><td colspan="6"><strong>Last candle data</strong></td></tr>
+                    <tr style="text-align:center;"><td>10th</td><td>9th</td><td>8th</td><td>7th</td><td>6th</td><td>5th</td><td>4th</td><td>3rd</td><td>2nd</td><td>1st</td><td>Open</td><td>High</td><td>Low</td><td>Close</td><td>Change</td><td>%</td></tr>
+                    <tr style="text-align:left;"><td>1 minute</td><td><span id="thelast10candles_60_10" class="spanData"></span></td><td><span id="thelast10candles_60_9" class="spanData"></span></td><td><span id="thelast10candles_60_8" class="spanData"></span></td><td><span id="thelast10candles_60_7" class="spanData"></span></td><td><span id="thelast10candles_60_6" class="spanData"></span></td><td><span id="thelast10candles_60_5" class="spanData"></span></td><td><span id="thelast10candles_60_4" class="spanData"></span></td><td><span id="thelast10candles_60_3" class="spanData"></span></td><td><span id="thelast10candles_60_2" class="spanData"></span></td><td><span id="thelast10candles_60_1" class="spanData"></span></td><td><span id="thelast10candles_60_1_open" class="spanData"></span></td><td><span id="thelast10candles_60_1_high" class="spanData"></span></td><td><span id="thelast10candles_60_1_low" class="spanData"></span></td><td><span id="thelast10candles_60_1_close" class="spanData"></span></td><td><span id="thelast10candles_60_1_change" class="spanData"></span></td><td><span id="thelast10candles_60_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>2 minutes</td><td><span id="thelast10candles_120_10" class="spanData"></span></td><td><span id="thelast10candles_120_9" class="spanData"></span></td><td><span id="thelast10candles_120_8" class="spanData"></span></td><td><span id="thelast10candles_120_7" class="spanData"></span></td><td><span id="thelast10candles_120_6" class="spanData"></span></td><td><span id="thelast10candles_120_5" class="spanData"></span></td><td><span id="thelast10candles_120_4" class="spanData"></span></td><td><span id="thelast10candles_120_3" class="spanData"></span></td><td><span id="thelast10candles_120_2" class="spanData"></span></td><td><span id="thelast10candles_120_1" class="spanData"></span></td><td><span id="thelast10candles_120_1_open" class="spanData"></span></td><td><span id="thelast10candles_120_1_high" class="spanData"></span></td><td><span id="thelast10candles_120_1_low" class="spanData"></span></td><td><span id="thelast10candles_120_1_close" class="spanData"></span></td><td><span id="thelast10candles_120_1_change" class="spanData"></span></td><td><span id="thelast10candles_120_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>3 minutes</td><td><span id="thelast10candles_180_10" class="spanData"></span></td><td><span id="thelast10candles_180_9" class="spanData"></span></td><td><span id="thelast10candles_180_8" class="spanData"></span></td><td><span id="thelast10candles_180_7" class="spanData"></span></td><td><span id="thelast10candles_180_6" class="spanData"></span></td><td><span id="thelast10candles_180_5" class="spanData"></span></td><td><span id="thelast10candles_180_4" class="spanData"></span></td><td><span id="thelast10candles_180_3" class="spanData"></span></td><td><span id="thelast10candles_180_2" class="spanData"></span></td><td><span id="thelast10candles_180_1" class="spanData"></span></td><td><span id="thelast10candles_180_1_open" class="spanData"></span></td><td><span id="thelast10candles_180_1_high" class="spanData"></span></td><td><span id="thelast10candles_180_1_low" class="spanData"></span></td><td><span id="thelast10candles_180_1_close" class="spanData"></span></td><td><span id="thelast10candles_180_1_change" class="spanData"></span></td><td><span id="thelast10candles_180_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>5 minutes</td><td><span id="thelast10candles_300_10" class="spanData"></span></td><td><span id="thelast10candles_300_9" class="spanData"></span></td><td><span id="thelast10candles_300_8" class="spanData"></span></td><td><span id="thelast10candles_300_7" class="spanData"></span></td><td><span id="thelast10candles_300_6" class="spanData"></span></td><td><span id="thelast10candles_300_5" class="spanData"></span></td><td><span id="thelast10candles_300_4" class="spanData"></span></td><td><span id="thelast10candles_300_3" class="spanData"></span></td><td><span id="thelast10candles_300_2" class="spanData"></span></td><td><span id="thelast10candles_300_1" class="spanData"></span></td><td><span id="thelast10candles_300_1_open" class="spanData"></span></td><td><span id="thelast10candles_300_1_high" class="spanData"></span></td><td><span id="thelast10candles_300_1_low" class="spanData"></span></td><td><span id="thelast10candles_300_1_close" class="spanData"></span></td><td><span id="thelast10candles_300_1_change" class="spanData"></span></td><td><span id="thelast10candles_300_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>10 minutes</td><td><span id="thelast10candles_600_10" class="spanData"></span></td><td><span id="thelast10candles_600_9" class="spanData"></span></td><td><span id="thelast10candles_600_8" class="spanData"></span></td><td><span id="thelast10candles_600_7" class="spanData"></span></td><td><span id="thelast10candles_600_6" class="spanData"></span></td><td><span id="thelast10candles_600_5" class="spanData"></span></td><td><span id="thelast10candles_600_4" class="spanData"></span></td><td><span id="thelast10candles_600_3" class="spanData"></span></td><td><span id="thelast10candles_600_2" class="spanData"></span></td><td><span id="thelast10candles_600_1" class="spanData"></span></td><td><span id="thelast10candles_600_1_open" class="spanData"></span></td><td><span id="thelast10candles_600_1_high" class="spanData"></span></td><td><span id="thelast10candles_600_1_low" class="spanData"></span></td><td><span id="thelast10candles_600_1_close" class="spanData"></span></td><td><span id="thelast10candles_600_1_change" class="spanData"></span></td><td><span id="thelast10candles_600_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>15 minutes</td><td><span id="thelast10candles_900_10" class="spanData"></span></td><td><span id="thelast10candles_900_9" class="spanData"></span></td><td><span id="thelast10candles_900_8" class="spanData"></span></td><td><span id="thelast10candles_900_7" class="spanData"></span></td><td><span id="thelast10candles_900_6" class="spanData"></span></td><td><span id="thelast10candles_900_5" class="spanData"></span></td><td><span id="thelast10candles_900_4" class="spanData"></span></td><td><span id="thelast10candles_900_3" class="spanData"></span></td><td><span id="thelast10candles_900_2" class="spanData"></span></td><td><span id="thelast10candles_900_1" class="spanData"></span></td><td><span id="thelast10candles_900_1_open" class="spanData"></span></td><td><span id="thelast10candles_900_1_high" class="spanData"></span></td><td><span id="thelast10candles_900_1_low" class="spanData"></span></td><td><span id="thelast10candles_900_1_close" class="spanData"></span></td><td><span id="thelast10candles_900_1_change" class="spanData"></span></td><td><span id="thelast10candles_900_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>30 minutes</td><td><span id="thelast10candles_1800_10" class="spanData"></span></td><td><span id="thelast10candles_1800_9" class="spanData"></span></td><td><span id="thelast10candles_1800_8" class="spanData"></span></td><td><span id="thelast10candles_1800_7" class="spanData"></span></td><td><span id="thelast10candles_1800_6" class="spanData"></span></td><td><span id="thelast10candles_1800_5" class="spanData"></span></td><td><span id="thelast10candles_1800_4" class="spanData"></span></td><td><span id="thelast10candles_1800_3" class="spanData"></span></td><td><span id="thelast10candles_1800_2" class="spanData"></span></td><td><span id="thelast10candles_1800_1" class="spanData"></span></td><td><span id="thelast10candles_1800_1_open" class="spanData"></span></td><td><span id="thelast10candles_1800_1_high" class="spanData"></span></td><td><span id="thelast10candles_1800_1_low" class="spanData"></span></td><td><span id="thelast10candles_1800_1_close" class="spanData"></span></td><td><span id="thelast10candles_1800_1_change" class="spanData"></span></td><td><span id="thelast10candles_1800_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>1 hour</td><td><span id="thelast10candles_3600_10" class="spanData"></span></td><td><span id="thelast10candles_3600_9" class="spanData"></span></td><td><span id="thelast10candles_3600_8" class="spanData"></span></td><td><span id="thelast10candles_3600_7" class="spanData"></span></td><td><span id="thelast10candles_3600_6" class="spanData"></span></td><td><span id="thelast10candles_3600_5" class="spanData"></span></td><td><span id="thelast10candles_3600_4" class="spanData"></span></td><td><span id="thelast10candles_3600_3" class="spanData"></span></td><td><span id="thelast10candles_3600_2" class="spanData"></span></td><td><span id="thelast10candles_3600_1" class="spanData"></span></td><td><span id="thelast10candles_3600_1_open" class="spanData"></span></td><td><span id="thelast10candles_3600_1_high" class="spanData"></span></td><td><span id="thelast10candles_3600_1_low" class="spanData"></span></td><td><span id="thelast10candles_3600_1_close" class="spanData"></span></td><td><span id="thelast10candles_3600_1_change" class="spanData"></span></td><td><span id="thelast10candles_3600_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>2 hours</td><td><span id="thelast10candles_7200_10" class="spanData"></span></td><td><span id="thelast10candles_7200_9" class="spanData"></span></td><td><span id="thelast10candles_7200_8" class="spanData"></span></td><td><span id="thelast10candles_7200_7" class="spanData"></span></td><td><span id="thelast10candles_7200_6" class="spanData"></span></td><td><span id="thelast10candles_7200_5" class="spanData"></span></td><td><span id="thelast10candles_7200_4" class="spanData"></span></td><td><span id="thelast10candles_7200_3" class="spanData"></span></td><td><span id="thelast10candles_7200_2" class="spanData"></span></td><td><span id="thelast10candles_7200_1" class="spanData"></span></td><td><span id="thelast10candles_7200_1_open" class="spanData"></span></td><td><span id="thelast10candles_7200_1_high" class="spanData"></span></td><td><span id="thelast10candles_7200_1_low" class="spanData"></span></td><td><span id="thelast10candles_7200_1_close" class="spanData"></span></td><td><span id="thelast10candles_7200_1_change" class="spanData"></span></td><td><span id="thelast10candles_7200_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>4 hours</td><td><span id="thelast10candles_14400_10" class="spanData"></span></td><td><span id="thelast10candles_14400_9" class="spanData"></span></td><td><span id="thelast10candles_14400_8" class="spanData"></span></td><td><span id="thelast10candles_14400_7" class="spanData"></span></td><td><span id="thelast10candles_14400_6" class="spanData"></span></td><td><span id="thelast10candles_14400_5" class="spanData"></span></td><td><span id="thelast10candles_14400_4" class="spanData"></span></td><td><span id="thelast10candles_14400_3" class="spanData"></span></td><td><span id="thelast10candles_14400_2" class="spanData"></span></td><td><span id="thelast10candles_14400_1" class="spanData"></span></td><td><span id="thelast10candles_14400_1_open" class="spanData"></span></td><td><span id="thelast10candles_14400_1_high" class="spanData"></span></td><td><span id="thelast10candles_14400_1_low" class="spanData"></span></td><td><span id="thelast10candles_14400_1_close" class="spanData"></span></td><td><span id="thelast10candles_14400_1_change" class="spanData"></span></td><td><span id="thelast10candles_14400_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>8 hours</td><td><span id="thelast10candles_28800_10" class="spanData"></span></td><td><span id="thelast10candles_28800_9" class="spanData"></span></td><td><span id="thelast10candles_28800_8" class="spanData"></span></td><td><span id="thelast10candles_28800_7" class="spanData"></span></td><td><span id="thelast10candles_28800_6" class="spanData"></span></td><td><span id="thelast10candles_28800_5" class="spanData"></span></td><td><span id="thelast10candles_28800_4" class="spanData"></span></td><td><span id="thelast10candles_28800_3" class="spanData"></span></td><td><span id="thelast10candles_28800_2" class="spanData"></span></td><td><span id="thelast10candles_28800_1" class="spanData"></span></td><td><span id="thelast10candles_28800_1_open" class="spanData"></span></td><td><span id="thelast10candles_28800_1_high" class="spanData"></span></td><td><span id="thelast10candles_28800_1_low" class="spanData"></span></td><td><span id="thelast10candles_28800_1_close" class="spanData"></span></td><td><span id="thelast10candles_28800_1_change" class="spanData"></span></td><td><span id="thelast10candles_28800_1_changepercent" class="spanData"></span></td></tr>
+                    <tr style="text-align:left;"><td>1 day</td><td><span id="thelast10candles_86400_10" class="spanData"></span></td><td><span id="thelast10candles_86400_9" class="spanData"></span></td><td><span id="thelast10candles_86400_8" class="spanData"></span></td><td><span id="thelast10candles_86400_7" class="spanData"></span></td><td><span id="thelast10candles_86400_6" class="spanData"></span></td><td><span id="thelast10candles_86400_5" class="spanData"></span></td><td><span id="thelast10candles_86400_4" class="spanData"></span></td><td><span id="thelast10candles_86400_3" class="spanData"></span></td><td><span id="thelast10candles_86400_2" class="spanData"></span></td><td><span id="thelast10candles_86400_1" class="spanData"></span></td><td><span id="thelast10candles_86400_1_open" class="spanData"></span></td><td><span id="thelast10candles_86400_1_high" class="spanData"></span></td><td><span id="thelast10candles_86400_1_low" class="spanData"></span></td><td><span id="thelast10candles_86400_1_close" class="spanData"></span></td><td><span id="thelast10candles_86400_1_change" class="spanData"></span></td><td><span id="thelast10candles_86400_1_changepercent" class="spanData"></span></td></tr>
+                </table>
+            </div>
+
+            <div id="div_continuousindices" class="divData">
+              <table class="zebra">
+                  <tr style="vertical-align: bottom;text-align:center;"><td style="width: 4%;"><strong>Ativar?</strong></td><td style="width: 12%;"><strong>Market</strong></td><td style="max-width: 40px;"><strong>1001 Ticks List</strong></td><td style="width: 40%;"><strong>1001 Last Digit List</strong></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#1&nbsp;:&nbsp;<input id="continuousindices_1_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_1_market" class="spanData">Volatility 10(1s) Index</span><span id="continuousindices_1_symbol" hidden>1HZ10V</span></td><td><input type="text" id="continuousindices_1_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_1_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#2&nbsp;:&nbsp;<input id="continuousindices_2_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_2_market" class="spanData">Volatility 25(1s) Index</span><span id="continuousindices_2_symbol" hidden>1HZ25V</span></td><td><input type="text" id="continuousindices_2_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_2_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#3&nbsp;:&nbsp;<input id="continuousindices_3_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_3_market" class="spanData">Volatility 50(1s) Index</span><span id="continuousindices_3_symbol" hidden>1HZ50V</span></td><td><input type="text" id="continuousindices_3_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_3_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#4&nbsp;:&nbsp;<input id="continuousindices_4_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_4_market" class="spanData">Volatility 75(1s) Index</span><span id="continuousindices_4_symbol" hidden>1HZ75V</span></td><td><input type="text" id="continuousindices_4_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_4_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#5&nbsp;:&nbsp;<input id="continuousindices_5_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_5_market" class="spanData">Volatility 100(1s) Index</span><span id="continuousindices_5_symbol" hidden>1HZ100V</span></td><td><input type="text" id="continuousindices_5_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_5_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#6&nbsp;:&nbsp;<input id="continuousindices_6_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_6_market" class="spanData">Volatility 10 Index</span><span id="continuousindices_6_symbol" hidden>R_10</span></td><td><input type="text" id="continuousindices_6_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_6_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#7&nbsp;:&nbsp;<input id="continuousindices_7_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_7_market" class="spanData">Volatility 25 Index</span><span id="continuousindices_7_symbol" hidden>R_25</span></td><td><input type="text" id="continuousindices_7_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_7_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#8&nbsp;:&nbsp;<input id="continuousindices_8_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_8_market" class="spanData">Volatility 50 Index</span><span id="continuousindices_8_symbol" hidden>R_50</span></td><td><input type="text" id="continuousindices_8_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_8_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#9&nbsp;:&nbsp;<input id="continuousindices_9_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_9_market" class="spanData">Volatility 75 Index</span><span id="continuousindices_9_symbol" hidden>R_75</span></td><td><input type="text" id="continuousindices_9_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_9_digits" style="direction: rtl; width: 100%;"></td></tr>
+                  <tr style="text-align:left;"><td><div style="display: flex; flex-direction: row; text-align: right; color: #fff;">Market#10&nbsp;:&nbsp;<input id="continuousindices_10_active" type="checkbox" style="width: 50px;"></div></td><td><span style="text-align: left;" id="continuousindices_10_market" class="spanData">Volatility 100 Index</span><span id="continuousindices_10_symbol" hidden>R_100</span></td><td><input type="text" id="continuousindices_10_ticks" style="direction: rtl; width: 100%;"></td><td><input type="text" id="continuousindices_10_digits" style="direction: rtl; width: 100%;"></td></tr>
+              </table>
+          </div>
+
+            <div id="div_ihaveanidea" class="divData">
+                <table><tr><td style="padding: 25px;">Tem uma ideia de Bot ou Estatística?<br>Entre em <a href="https://forms.gle/TQrkKs4bEk81BhZ6A" target="_blank">contato aqui.</a></td></tr></table>
+            </div>
+
+            <div id="div_comingsoon" class="divData">
+              <table><tr><td style="padding: 25px;">Em Breve</td></tr></table>
+          </div>
+        </div>
+    </div>
+
+    <div id="box_block" class="box_block">
+      <div id="div_showblocktool" class="blocktool">
+        <input type="image" alt="Mostrar/Ocultar Barra Lateral" src="image/icon_hidesidebar2.png" id="btn_hideshowsidebar" class="btn_BlockTool" title="Mostrar/Ocultar Barra Lateral">
+        <input type="image" alt="Mostrar/Ocultar Ferramentas" src="image/icon_hidetoolbox2.png" id="btn_hideshowtoolbox" class="btn_BlockTool" title="Mostrar/Ocultar Ferramentas">
+        
+        <input type="image" alt="Resetar" src="image/icon_reset2.png" id="btn_reset" class="btn_BlockTool" title="Resetar blocos ao estado inicial">
+        <input type="file" id="input_file" accept=".ptbot" hidden>
+        <input type="image" alt="Carregar" src="image/icon_load2.png" id="btn_load" class="btn_BlockTool" title="Carregar estratégia">
+        <input type="image" alt="Salvar" src="image/icon_save2.png" id="btn_save" class="btn_BlockTool" title="Salvar estratégia">
+        
+        <input type="image" alt="Desfazer" src="image/icon_undo2.png" id="btn_undo" class="btn_BlockTool" title="Desfazer (Ctrl+Z)">
+        <input type="image" alt="Refazer" src="image/icon_redo2.png" id="btn_redo" class="btn_BlockTool" title="Refazer (Ctrl+Shift+Z)">
+        <input type="image" alt="Rearranjar" src="image/icon_arrange2a.png" id="btn_arrange" class="btn_BlockTool" title="Rearranjar">
+        <input type="image" alt="Estatísticas" src="image/icon_showdatabox2.png" id="btn_hideshowdatabox" class="btn_BlockTool" title="Mostrar/Ocultar Estatísticas">
+        <input type="image" alt="Notificações" src="image/icon_info2.png" id="btn_logleft" class="btn_BlockTool" title="Mostrar/Ocultar Notificações">
+        <input type="image" alt="Logs" src="image/icon_log2.png" id="btn_log" class="btn_BlockTool" title="Mostrar/Ocultar Logs">
+        <input type="image" alt="Tabela de Trades" src="image/icon_summary3.png" id="btn_summary" class="btn_BlockTool" title="Mostrar/Ocultar Tabela de Trades">
+        
+        <span style="vertical-align: top;">
+          <button id="btnAdvancedRobot" class="btnAdvancedRobot"><img alt="" src="image/icon_robot3.png" style="height: 25px;">&nbsp;Selecionar Bot</button>
+          
+          <select id="selStrategy" class="css-input" style="width: 150px!important; height: 40px!important; top: 0; padding: 0; margin: 0;" hidden></select> 
+        </span>
+
+        <input type="image" alt="Iniciar/Parar bot" src="image/icon_run.png" id="btn_run" class="btn_BlockTool" style="visibility: hidden;" disabled="disabled" title="Iniciar/Parar bot">
+
+      </div>
+      <div class="blockly-editor">
+          <div id="blocklyDiv" style="height: 100%; width: 100%;"></div>
+      </div>
+    </div>
+
+    <div id="mydivSummary" style="display: none;">
+      <table style="width: 100%; height: 100%; vertical-align: top; margin: 0px;padding:0px;border-collapse: collapse; border-spacing: 0;">
+        <tr style="height: 0px;"><td style="vertical-align: top;">
+          <div id="mydivSummaryheader">
+            <div style="float: left; margin-left: 5px; color: #fff;">Tabela de Trades</div>
+            <div style="float: right;">
+              <input type="image" alt="Apagar" src="image/icon_clear.png" id="btn_clearBoxSummary" class="btn_clear">
+              <input type="image" alt="Download" src="image/icon_save.png" id="btn_saveBoxSummary" class="btn_save">
+              <input type="image" alt="Fechar" src="image/icon_close.png" id="btn_closeBoxSummary" class="btn_close">
+            </div>
+          </div>
+          <div id="mydivSummarybutton">
+            <input type="image" alt="Iniciar/Parar bot" src="image/icon_run.png" id="btn_run2" class="btn_run2_BlockTool" style="border-radius: 10%;visibility: hidden;" disabled="disabled" title="Iniciar/Parar Bot">
+            <div id="status_bot_running" style="color: #fff;">Bot parado</div>
+          </div>
+          <div id="mydivSummarystepper">
+            <div class="stepper-wrapper">
+                <div id="divStepper1" class="stepper-item active">
+                    <div class="step-counter">1</div>
+                    <div class="step-name">Analisando</div>
+                </div>
+                <div id="divStepper2" class="stepper-item active">
+                    <div class="step-counter">2</div>
+                    <div class="step-name">Comprando</div>
+                </div>
+                <div id="divStepper3" class="stepper-item active">
+                    <div class="step-counter">3</div>
+                    <div class="step-name">Processando</div>
+                </div>
+                <div id="divStepper4" class="stepper-item active">
+                    <div class="step-counter">4</div>
+                    <div class="step-name">Resultado</div>
+                </div>
+            </div>
+          </div>
+        </td></tr>
+        <tr><td style="vertical-align: top;">
+          <div id="mydivSummaryTBODY">
+            <table id="tableSummaryTBODY" style="width: 100%; border: 1px solid #5e5e5e; border-collapse: collapse; border-spacing: 0; top: 0; padding: 0; overflow: auto;">
+              <tr id="tableSummaryTRATAS">
+                <th>Timestamp</th>
+                <th>Trade Type</th>
+                <th>Entry Spot</th>
+                <th>Exit Spot</th>
+                <th>Buy Price</th>
+                <th>Profit/Loss</th>
+              </tr>
+              
+            </table>
+          </div>
+        </td></tr>
+        <tr style="height: 0px"><td>
+          <div id="mydivSummarysummary">
+            <table id="tableSummarysummary" style="width: 100%; border: 0px; border-collapse: collapse; border-spacing: 0; padding: 0; overflow: auto;">
+              <tr style="background-color: #4e4e4e;text-align:center;">
+                <th>Conta</th>
+                <th>Qtde Entradas</th>
+                <th>Investido</th>
+                <th>Retorno</th>
+                <th>Ganho</th>
+                <th>Perda</th>
+                <th>Total Lucro/Perda</th>
+                <th>Banca</th>
+              </tr>
+              <tr style="text-align:center;">
+                <td><span id="summary_account">-</span></td>
+                <td><span id="summary_noofruns">0</span></td>
+                <td><span id="summary_totalstake">0</span></td>
+                <td><span id="summary_totalpayout">0</span></td>
+                <td><span id="summary_win" style="color: #0f0;">0</span></td>
+                <td><span id="summary_loss" style="color: #f44336;">0</span></td>
+                <td><span id="summary_totalprofitloss">0</span></td>
+                <td><span id="summary_balance">-</span></td>
+              </tr>
+            </table>
+          </div>
+        </td></tr>
+      </table>   
+    </div>
+
+    <div id="mydivLog" style="display: none;">
+      <div id="mydivLogheader">
+        <div style="float: left; margin-left: 5px; color: #fff;">Log</div>
+        <div style="float: right;">
+          <input type="image" alt="Apagar" src="image/icon_clear.png" id="btn_clearBoxLog" class="btn_clear">
+          <input type="image" alt="Download" src="image/icon_save.png" id="btn_saveBoxLog" class="btn_save">
+          <input type="image" alt="Fechar" src="image/icon_close.png" id="btn_closeBoxLog" class="btn_close">
+        </div>
+      </div>
+      <div id="mydivLogTH">
+        <table id="tableLogTH" style="width: 100%;">
+          <tr style="background-color: #777;">
+            <th style="width: 25%; color: #fff;">Timestamp</th>
+            <th style="color: #fff;">Message</th>
+          </tr>
+        </table>
+      </div>
+      <div id="mydivLogTBODY">
+        <table id="tableLogTBODY" style="width: 100%;">
+          <tr>
+            <td style="width: 25%;"></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="divPopupToken" class="w3-modal" style="z-index: 200;">
+      <div id="divBoxPopupToken" class="w3-modal-content w3-animate-zoom">
+        <div id="divBoxPopupTokenHeader" class="divBoxPopupHeader">
+          <div style="float: left; margin-left: 5px; color: #fff; vertical-align: middle;"><img alt="" src="image/icon_token.png" style="height: 17px;">&nbsp;Inserir Tokens</div>
+          <div style="float: right;">
+            <input type="image" alt="Salvar/Fechar" src="image/icon_save.png" id="btn_saveBoxPopupToken" class="btn_save" title="Salvar/Fechar" onclick="document.getElementById('divPopupToken').style.display='none'">
+          </div>
+        </div>
+        <div>
+          <br><br>
+          <div class="input-container">
+            <input id="inpMToken" type="password" value="" required="">
+            <label>Token Conta Real</label>		
+          </div>
+          <div class="input-container">
+            <input id="inpSToken" type="password" value="" required="">
+            <label>Token Conta Virtual</label>		
+          </div>
+          <div style="width: 100%; text-align: center; color: #ffffff;">
+            <br>
+            <button type="button" class="bn30tosimple" id="btn_CreateToken">
+              <span style="color: #ffffff;">Gerar Tokens na Corretora</span>
+            </button><br>
+            <button type="button" class="bn30tosimple" onclick=" window.open('https://youtu.be/PTONfil8xWM?si=IZGHVQyXYDfGVUjX','_blank')">
+              <span style="color: #ffffff;"><img alt="" src="image/icon_youtubesmall.png" style="height: 20px;">&nbsp;Como gerar Tokens</span>
+            </button>
+            <br>
+            <button type="button" class="bn30tosimple" id="btn_CreateAccount">
+              <span style="color: #ffffff;">Criar Conta na Corretora</span>
+              
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="divPopupMarket" class="w3-modal" style="z-index: 200;">
+      <div id="divBoxPopupMarket" class="w3-modal-content w3-animate-zoom">
+        <div id="divBoxPopupMarketHeader" class="divBoxPopupHeader">
+          <div style="float: left; margin-left: 5px; color: #fff; vertical-align: middle;"><img alt="" src="image/icon_market.png" style="height: 17px;"> Market</div>
+          <div style="float: right;">
+            <input type="image" alt="Salvar/Fechar" title="Salvar/Fechar" src="image/icon_save.png" id="btn_saveBoxPopupMarket" class="btn_save" onclick="document.getElementById('divPopupMarket').style.display='none'">
+          </div>
+        </div>
+        <div>
+          <br>
+          <table style="width: 100%;">
+            <tr><td><select id="selMarket" class="css-input"><option>Market</option></select></td></tr>
+            <tr><td><select id="selSubMarket" class="css-input"><option>Sub market</option></select></td></tr>
+            <tr><td><select id="selSymbol" class="css-input"><option>Symbol</option></select></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="divPopupMoneyManagement" class="w3-modal" style="z-index: 200;">
+      <div id="divBoxPopupMoneyManagement" class="w3-modal-content w3-animate-zoom">
+        <div id="divBoxPopupMoneyManagementHeader" class="divBoxPopupHeader">
+          <div style="float: left; margin-left: 5px; color: #fff; vertical-align: middle;"><img alt="" src="image/icon_moneymanagement.png" style="height: 17px;"> Gerenciamento</div>
+          <div style="float: right;">
+            <input type="image" alt="Salvar/Fechar" title="Salvar/Fechar" src="image/icon_save.png" id="btn_saveBoxPopupMoneyManagement" class="btn_save" onclick="document.getElementById('divPopupMoneyManagement').style.display='none'">
+          </div>
+        </div>
+        <div>
+          <br>
+          <div>
+            <table><tr>
+              <td>
+                Método: 
+              </td>
+              <td>
+                <select id="selMoneyManagement" class="css-input">
+                  <option value="smartmartingale" selected>Smart Martingale</option>
+                  <option value="smartcyclestake">Ciclo de Stake</option>
+                  <option value="fixedstake">Stake fixo</option>
+                </select>
+              </td>
+            </tr></table>
+          </div>
+          <br>
+          <div class="input-container" id="divInpInitStake">
+              <input id="inpInitStake" type="number" value="1" required="">
+              <label id="lblInpInitStake">Stake Inicial</label>		
+          </div>
+          <div class="input-container" id="divInpMartiFactor">
+              <input id="inpMartiFactor" type="number" value="15" required="">
+              <label>Fator Martingale</label>		
+          </div>
+          <div class="input-container" id="divInpCycleStake" hidden>
+              <input id="inpCycleStake" type="text" value="1,2,3,5,10,22.5,50" required="">
+              <label>Ciclo de Stake</label>		
+          </div>
+          <div id="divChkSmart" hidden>
+            <table><tr>
+              <td style="width: 15%;">
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkSmart" checked>
+                  <span class="circle"></span>
+                </label>	
+              </td>
+              <td>
+                Volta ao stake inicial após recuperação de loss.
+              </td>
+            </tr></table>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="divPopupTarget" class="w3-modal" style="z-index: 200;">
+      <div id="divBoxPopupTarget" class="w3-modal-content w3-animate-zoom">
+        <div id="divBoxPopupTargetHeader" class="divBoxPopupHeader">
+          <div style="float: left; margin-left: 5px; color: #fff; vertical-align: middle;"><img alt="" src="image/icon_target.png" style="height: 17px;"> Meta</div>
+          <div style="float: right;">
+            <input type="image" alt="Salvar/Fechar" title="Salvar/Fechar" src="image/icon_save.png" id="btn_saveBoxPopupTarget" class="btn_save" onclick="document.getElementById('divPopupTarget').style.display='none'">
+          </div>
+        </div>
+        <div>
+          <br>
+          <table style="width: 100%; border: 0px solid #fff;">
+            <tr>
+              <td style="width: 15%;">
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkTP">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                <input id="inpTP" type="number" value="0" required="">
+                <label>Target profit</label>		
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkSL">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpSL" type="number" value="0" required="">
+                  <label>Stop loss</label>		
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkNumOfWin">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpNumOfWin" type="number" value="0" required="">
+                  <label>Quantidade de Wins</label>		
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkNumOfLoss">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpNumOfLoss" type="number" value="0" required="">
+                  <label>Quantidade de Loss</label>		
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkNumOfRun">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpNumOfRun" type="number" value="0" required="">
+                  <label>Quantidade de Entradas</label>		
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkNumOfWinInARow">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpNumOfWinInARow" type="number" value="0" required="">
+                  <label>Quantidade Wins seguidos</label>		
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkNumOfLossInARow">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpNumOfLossInARow" type="number" value="0" required="">
+                  <label>Quantidade Loss seguidos</label>		
+                </div>
+              </td>
+            </tr>
+          </table>
+          <span style="color: #fff;">
+            <img alt="" src="image/icon_info.png" style="width: 13px;"> O bot irá parar quando uma das condições acima for atendida.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div id="divPopupVirtualLose" class="w3-modal" style="z-index: 200;">
+      <div id="divBoxPopupVirtualLose" class="w3-modal-content w3-animate-zoom">
+        <div id="divBoxPopupVirtualLoseHeader" class="divBoxPopupHeader">
+          <div style="float: left; margin-left: 5px; color: #fff; vertical-align: middle;"><img alt="" src="image/icon_virtuallose.png" style="height: 17px;"> Virtual Loss</div>
+          <div style="float: right;">
+            <input type="image" alt="Salvar/Fechar" title="Salvar/Fechar" src="image/icon_save.png" id="btn_saveBoxPopupVirtualLose" class="btn_save" onclick="document.getElementById('divPopupVirtualLose').style.display='none'">
+          </div>
+        </div>
+        <div>
+          <br>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 15%;">
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkVLose">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpVLose" type="number" value="0" step="1" required="">
+                  <label>Quantidade de Loss Virtual</label>		
+                </div>
+              </td>
+            </tr>
+          </table>
+          <span style="color: #fff;">
+            <br> <img alt="" src="image/icon_info.png" style="width: 13px;"> O Bot comprará o contrato utilizando a conta virtual X vezes antes da conta real.
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div id="divPopupAdditionalSettings" class="w3-modal" style="z-index: 200;">
+      <div id="divBoxPopupAdditionalSettings" class="w3-modal-content w3-animate-zoom">
+        <div id="divBoxPopupAdditionalSettingsHeader" class="divBoxPopupHeader">
+          <div style="float: left; margin-left: 5px; color: #fff; vertical-align: middle;"><img alt="" src="image/icon_additionalsettings.png" style="height: 17px;"> Configurações</div>
+          <div style="float: right;">
+            <input type="image" alt="Salvar/Fechar" title="Salvar/Fechar" src="image/icon_save.png" id="btn_saveBoxPopupAdditionalSettings" class="btn_save" onclick="document.getElementById('divPopupAdditionalSettings').style.display='none'">
+          </div>
+        </div>
+        <div>
+          <br>
+          <table style="width: 100%;">
+            <tr>
+              <td style="width: 15%;">
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkDelayWin">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpDelayWin" type="number" value="0" step="1" required="">
+                  <label>Delay após win (segundos)</label>		
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="toggle-btn">
+                  <input type="checkbox" id="chkDelayLose">
+                  <span class="circle"></span>
+                </label>
+              </td>
+              <td>
+                <div class="input-container">
+                  <input id="inpDelayLose" type="number" value="0" step="1" required="">
+                  <label>Delay após loss (segundos)</label>		
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="divPopupRobot" class="w3-modal" style="z-index: 200;">
+      <div id="divBoxPopupRobot" class="w3-modal-content w3-animate-zoom">
+        <div>
+          <table id="myTable">
+            <thead style="position: -webkit-sticky; position: sticky; z-index: 2; top: 0;">
+              <tr style="border-bottom: 0px;"><th colspan="6" style="padding: 0px; border: 0px; cursor: default;">
+                <div id="divBoxPopupRobotHeader" class="divBoxPopupHeader">
+                  <div style="float: left; margin-left: 5px; color: #fff; vertical-align: middle;"><img alt="" src="image/icon_robot.png" style="height: 17px;">&nbsp;<span id="spanJumRobot" style="color: #ffffff;"></span>&nbsp;bots disponíveis&nbsp;<span style="color: rgb(223, 236, 36);"> - Novos Bots adicionados todas as semanas!</span></div>
+                  <div style="float: right;">
+                    <input type="image" alt="Fechar" title="Fechar" src="image/icon_close.png" id="btn_closeBoxPopupRobot" class="btn_close" onclick="document.getElementById('divPopupRobot').style.display='none'">
+                  </div>
+                </div>
+              </th></tr>
+              <tr style="border-bottom: 0px; cursor: default;"><th colspan="6" style="padding: 0px; border: 0px;"><input type="text" id="myInput" placeholder="Procurar..."></th></tr>
+              <tr class="tableHeader" style="cursor: default;">
+                <th>Nome do Bot</th>
+                <th>Tipo de Contrato</th>
+                <th>Gerenciamento</th>
+                <th>Estratégia</th>
+                <th>Mercado Padrão</th>
+                <th>Data de Lançamento</th>
+              </tr>
+            </thead>
+            <tbody id="myTableBody"> <!-- START STRATS -->
+              <tr>
+                <td hidden>padraorisefall</td>
+                <td style="font-weight: bolder;">Padrões de Rise e Fall - Multi Mercado</td>
+                <td>Rise (Call)</td>
+                <td>Defina o Stake Inicial e Fator Martingale</td>
+                <td>Este bot procura padrões de Rise e Fall em cinco volatilidades ao mesmo tempo. Ao encontrar, irá entrar em Rise sequencialmente até ganhar (sem delay). O padrão é informado ao iniciar o bot, digitando R para Rise e F para Fall. </td>
+                <td>5 Índices de Volatilidade</td>
+                <td>27/09/2024</td>
+              </tr>
+              <tr>
+                <td hidden>tocatocarsi22</td>
+                <td style="font-weight: bolder;">Toca-Toca RSI 22</td>
+                <td>Touches</td>
+                <td>Defina o Stake Inicial e Fator Martingale</td>
+                <td>Este bot verifica o RSI do período de 22 ticks e espera o cruzamento abaixo do nível 75 ou acima do nível 25 para realizar a compra. Ajuste a barreira conforme desejar (barrier padrão = 0.18) Ao cruzar abaixo de 75 o bot compra Touches com barrier minus (-). Ao cruzar acima de 25 compra Touches com barrier plus (+). </td>
+                <td>Índice de Volatilidade 10(1s)</td>
+                <td>27/09/2024</td>
+              </tr>
+              <tr>
+                <td hidden>over1under8hedging</td>
+                <td style="font-weight: bolder;">Over 1 Under 8 Síncrono (Hedge)</td>
+                <td>Over/Under</td>
+                <td>Defina o Stake Inicial e Fator Martingale</td>
+                <td>Este bot realiza duas entradas simultâneas em Over 1 e Under 8 (Estratégia conhecida como Hedge), aplicando o fator martingale somente na entrada que tiver Loss. Você seleciona em quantos ticks a compra é realizada. Atenção: Este bot não utiliza o Loss Virtual.</td>
+                <td>Índice de Volatilidade 10</td>
+                <td>26/09/2024</td>
+              </tr>
+              <tr>
+                <td hidden>differ_sobedesce</td>
+                <td style="font-weight: bolder;">Differ com Análise Sobe/Desce</td>
+                <td>Differ</td>
+                <td>Defina o Stake Inicial, Fator Martingale e Stop</td>
+                <td>Este bot funciona em MULTI MERCADO, ou seja, analiza todas as volatilidades ao mesmo tempo. O bot analisa os dois últimos dígitos de cada volatilidade comparando padrões, ao encontrar o padrão predefinido realiza a compra. Utilize o Virtual Loss ao seu favor.</td>
+                <td>Todos os Índices de Volatilidade (10 mercados)</td>
+                <td>21/09/2024</td>
+              </tr>
+              <tr>
+                <td hidden>multimercado_overunderx</td>
+                <td style="font-weight: bolder;">Over Under X Multi Mercado</td>
+                <td>Over/Under</td>
+                <td>Defina o Stake Inicial e Fator Martingale</td>
+                <td>Este bot funciona em MULTI MERCADO, ou seja, analiza todas as volatilidades ao mesmo tempo.
+                  Você define se quer Over/Under, o nº da previsão, quantos dígitos acima/abaixo são necessários antes da compra e quantidade de Virtual Loss. Se perder, o bot compra sequenciamente (sem delay) até ganhar ou atingir o stop loss.</td>
+                <td>Todos os Índices de Volatilidade (10 mercados)</td>
+                <td>17/09/2024</td>
+              </tr>
+              
+              <!-- STOP STRATS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <form style="display: none;">
+      <input type="hidden" id="data_001" name="data_001">
+      <input type="hidden" id="data_002" name="data_002">
+      <input type="hidden" id="data_003" name="data_003">
+      <input type="hidden" id="data_004" name="data_004">
+      <input type="hidden" id="data_005" name="data_005">
+      <input type="hidden" id="data_006" name="data_006">
+      <input type="hidden" id="data_007" name="data_007">
+      <input type="hidden" id="data_008" name="data_008">
+      <input type="submit" id="aSimp" name="aSimp">
+    </form>
+
+    <xml xmlns="https://developers.google.com/blockly/xml" id="workspaceBlocks" style="display: none"></xml>
+    <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+      <category name="Logic">
+        <block type="controls_if"></block>
+        <block type="logic_compare">
+          <field name="OP">EQ</field>
+        </block>
+        <block type="logic_operation">
+          <field name="OP">AND</field>
+        </block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean">
+          <field name="BOOL">TRUE</field>
+        </block>
+        <block type="logic_null"></block>
+        <block type="logic_ternary"></block>
+      </category>
+      <category name="Math">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+        <block type="math_arithmetic">
+          <field name="OP">ADD</field>
+          <value name="A">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="B">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_single">
+          <field name="OP">ROOT</field>
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">9</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_trig">
+          <field name="OP">SIN</field>
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">45</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_constant">
+          <field name="CONSTANT">PI</field>
+        </block>
+        <block type="math_number_property">
+          <mutation divisor_input="false"></mutation>
+          <field name="PROPERTY">EVEN</field>
+          <value name="NUMBER_TO_CHECK">
+            <shadow type="math_number">
+              <field name="NUM">0</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_round">
+          <field name="OP">ROUND</field>
+          <value name="NUM">
+            <shadow type="math_number">
+              <field name="NUM">3.1</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_on_list">
+          <mutation op="SUM"></mutation>
+          <field name="OP">SUM</field>
+        </block>
+        <block type="math_modulo">
+          <value name="DIVIDEND">
+            <shadow type="math_number">
+              <field name="NUM">64</field>
+            </shadow>
+          </value>
+          <value name="DIVISOR">
+            <shadow type="math_number">
+              <field name="NUM">10</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_constrain">
+          <value name="VALUE">
+            <shadow type="math_number">
+              <field name="NUM">50</field>
+            </shadow>
+          </value>
+          <value name="LOW">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="HIGH">
+            <shadow type="math_number">
+              <field name="NUM">100</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_random_int">
+          <value name="FROM">
+            <shadow type="math_number">
+              <field name="NUM">1</field>
+            </shadow>
+          </value>
+          <value name="TO">
+            <shadow type="math_number">
+              <field name="NUM">100</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="math_random_float"></block>
+      </category>
+      <category name="Text">
+        <block type="text">
+          <field name="TEXT"></field>
+        </block>
+        <block type="text_join">
+          <mutation items="2"></mutation>
+        </block>
+        <block type="text_append">
+          <field name="VAR" id="{y4K#ev|H,`M}m:-rtCv">item</field>
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT"></field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_length">
+          <value name="VALUE">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_isEmpty">
+          <value name="VALUE">
+            <shadow type="text">
+              <field name="TEXT"></field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_indexOf">
+          <field name="END">FIRST</field>
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR" id="PL;a9NJ2ufOqK}!qB*[[">text</field>
+            </block>
+          </value>
+          <value name="FIND">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_charAt">
+          <mutation at="true"></mutation>
+          <field name="WHERE">FROM_START</field>
+          <value name="VALUE">
+            <block type="variables_get">
+              <field name="VAR" id="PL;a9NJ2ufOqK}!qB*[[">text</field>
+            </block>
+          </value>
+        </block>
+        <block type="text_getSubstring">
+          <mutation at1="true" at2="true"></mutation>
+          <field name="WHERE1">FROM_START</field>
+          <field name="WHERE2">FROM_START</field>
+          <value name="STRING">
+            <block type="variables_get">
+              <field name="VAR" id="PL;a9NJ2ufOqK}!qB*[[">text</field>
+            </block>
+          </value>
+        </block>
+        <block type="text_changeCase">
+          <field name="CASE">UPPERCASE</field>
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_trim">
+          <field name="MODE">BOTH</field>
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_print">
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+        <block type="text_prompt_ext">
+          <mutation type="TEXT"></mutation>
+          <field name="TYPE">TEXT</field>
+          <value name="TEXT">
+            <shadow type="text">
+              <field name="TEXT">abc</field>
+            </shadow>
+          </value>
+        </block>
+      </category>
+      <category name="Advanced">
+        <category name="List">
+          <block type="lists_create_with">
+            <mutation items="0"></mutation>
+          </block>
+          <block type="lists_create_with">
+            <mutation items="3"></mutation>
+          </block>
+          <block type="lists_repeat">
+            <value name="NUM">
+              <shadow type="math_number">
+                <field name="NUM">5</field>
+              </shadow>
+            </value>
+          </block>
+          <block type="lists_length"></block>
+          <block type="lists_isEmpty"></block>
+          <block type="lists_indexOf">
+            <field name="END">FIRST</field>
+            <value name="VALUE">
+              <block type="variables_get">
+                <field name="VAR" id="},!jLTP^~Xdsiuoi%sk=">list</field>
+              </block>
+            </value>
+          </block>
+          <block type="lists_getIndex">
+            <mutation statement="false" at="true"></mutation>
+            <field name="MODE">GET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="VALUE">
+              <block type="variables_get">
+                <field name="VAR" id="},!jLTP^~Xdsiuoi%sk=">list</field>
+              </block>
+            </value>
+          </block>
+          <block type="lists_setIndex">
+            <mutation at="true"></mutation>
+            <field name="MODE">SET</field>
+            <field name="WHERE">FROM_START</field>
+            <value name="LIST">
+              <block type="variables_get">
+                <field name="VAR" id="},!jLTP^~Xdsiuoi%sk=">list</field>
+              </block>
+            </value>
+          </block>
+          <block type="lists_getSublist">
+            <mutation at1="true" at2="true"></mutation>
+            <field name="WHERE1">FROM_START</field>
+            <field name="WHERE2">FROM_START</field>
+            <value name="LIST">
+              <block type="variables_get">
+                <field name="VAR" id="},!jLTP^~Xdsiuoi%sk=">list</field>
+              </block>
+            </value>
+          </block>
+          <block type="lists_split">
+            <mutation mode="SPLIT"></mutation>
+            <field name="MODE">SPLIT</field>
+            <value name="DELIM">
+              <shadow type="text">
+                <field name="TEXT">,</field>
+              </shadow>
+            </value>
+          </block>
+          <block type="lists_sort">
+            <field name="TYPE">NUMERIC</field>
+            <field name="DIRECTION">1</field>
+          </block>
+        </category>
+        <category name="Variable" custom="VARIABLE"></category>
+        <category name="Functions" custom="PROCEDURE"></category>
+        <category name="Loop">
+          <block type="controls_repeat_ext">
+            <value name="TIMES">
+              <shadow type="math_number">
+                <field name="NUM">10</field>
+              </shadow>
+            </value>
+          </block>
+          <block type="controls_whileUntil">
+            <field name="MODE">WHILE</field>
+          </block>
+          <block type="controls_for">
+            <field name="VAR" id="GiC^J|hj2=Sl`.Qd)`nC">i</field>
+            <value name="FROM">
+              <shadow type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow type="math_number">
+                <field name="NUM">10</field>
+              </shadow>
+            </value>
+            <value name="BY">
+              <shadow type="math_number">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+          </block>
+          <block type="controls_forEach">
+            <field name="VAR" id="LuR0R!O]#eW9ArVZ{Xp!">j</field>
+          </block>
+          <block type="controls_flow_statements">
+            <field name="FLOW">BREAK</field>
+          </block>
+        </category>
+      </category>
+      <category name="Exclusivos">
+        <category name="1. Run Once At Start">
+          <block type="runonceatstart"></block>
+          <block type="readyfortrade"></block>
+        </category>
+        <category name="2. Purchase Conditions">
+          <block type="purchaseconditions"></block>
+          <block type="checkagain"></block>
+          <block type="purchaseconditions_continuousindices"></block>
+          <block type="currentmarket_continuousindices"></block>
+          <block type="1001tickslist_continuousindices"></block>
+          <block type="1001lastdigitlist_continuousindices"></block>
+        </category>
+        <category name="3. Sell Conditions">
+          <block type="sellconditions"></block>
+          <block type="sellisavailable"></block>
+          <block type="sellprofitloss"></block>
+          <block type="sellatmarket"></block>
+        </category>
+        <category name="4. Restart Trading">
+          <block type="restarttradingconditions"></block>
+          <block type="tradeagain"></block>
+        </category>
+        <category name="Metas/Gerenciamento">
+          <block type="setmarket"></block>
+          <block type="setmoneymanagementtosmartmartingale"><value name="initialstake_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="martingalefactor_nya"><shadow type="math_number"><field name="NUM">15.5</field></shadow></value></block>
+          <block type="setmoneymanagementtosmartcyclestake"><value name="cyclestake_nya"><shadow type="text"><field name="TEXT">1,2.5,6,15,33.5,70</field></shadow></value></block>
+          <block type="setmoneymanagementtofixedstake"><value name="fixedstake_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+          <block type="settarget"><value name="targetprofit_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="stoploss_nya"><shadow type="math_number"><field name="NUM">100</field></shadow></value><value name="numberofwins_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="numberoflosses_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="numberofruns_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="numberofwinsinarow_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="numberoflossesinarow_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+          <block type="setvirtuallose"><value name="virtuallose_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block>
+          <block type="setadditionalsettings"><value name="delayafterwin_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="delayafterlose_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+        </category>
+        <category name="Análises">
+          <category name="Data:Digits">
+            <block type="lastdigit"></block>
+            <block type="1001lastdigitlist"></block>
+            <block type="thelast10digits"><field name="dropdown_thelast10digits_A">digit</field><field name="dropdown_thelast10digits_B">1</field></block>
+            <block type="digitstatisticsetnoofticks"><value name="ticks_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+            <block type="digitstatistic"><field name="dropdown_digitstatistic_A">1</field><field name="dropdown_digitstatistic_B">0</field></block>
+            <block type="caterzian20"><field name="dropdown_caterzian20_B">1</field></block>
+            <block type="evenodd20"><field name="dropdown_evenodd20_B">1</field></block>
+            <block type="evenvsoddsetnoofticks"><value name="ticks_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+            <block type="evenvsodd"><field name="dropdown_evenvsodd_A">1</field><field name="dropdown_evenvsodd_B">even</field></block>
+            <block type="overvsundersetnoofticks"><value name="ticks_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+            <block type="overvsundersetdigit"><value name="digit_nya"><shadow type="math_number"><field name="NUM">4</field></shadow></value></block>
+            <block type="overvsunder"><field name="dropdown_overvsunder_A">1</field><field name="dropdown_overvsunder_B">over</field></block>
+          </category>
+          <category name="Data:Ticks">
+            <block type="lasttick"></block>
+            <block type="lasttickstring"></block>
+            <block type="1001tickslist"></block>
+            <block type="1001ticksstringlist"></block>
+            <block type="thelast10ticks"><field name="dropdown_thelast10ticks_A">tick</field><field name="dropdown_thelast10ticks_B">10</field></block>
+            <block type="tickworm20"><field name="dropdown_tickworm20_A">current</field><field name="dropdown_tickworm20_B">1</field></block>
+            <block type="risevsfallsetnoofticks"><value name="ticks_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+            <block type="risevsfall"><field name="dropdown_risevsfall_A">1</field><field name="dropdown_risevsfall_B">rise</field></block>
+            <block type="inpTickTrismasetperiod"><value name="period_nya"><shadow type="math_number"><field name="NUM">20</field></shadow></value></block>
+            <block type="ticktrisma"><field name="dropdown_ticktrisma_A">1</field><field name="dropdown_ticktrisma_B">1</field></block>
+            <block type="detail3ticks"><field name="dropdown_detail3ticks_A">1</field><field name="dropdown_detail3ticks_B">1</field></block>
+            <block type="getstataccu"><value name="growthRate_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block>
+          </category>
+          <category name="Multi Market">
+            <block type="setactive_continuousindices"></block>
+            <block type="continuousindices"></block>
+          </category>
+        </category>
+        <category name="Blocos de Compra">
+          <block type="purchase_diff_match"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value><value name="ldp_nya"><shadow type="math_number"><field name="NUM">0</field></shadow></value></block>
+          <block type="purchase_over_under"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value><value name="ldp_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value></block>
+          <block type="purchase_even_odd"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value></block>
+          <block type="purchase_rise_fall"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value></block>
+          <block type="purchase_higher_lower"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value><value name="barrier_nya"><shadow type="text"><field name="TEXT">+12.345</field></shadow></value></block>
+          <block type="purchase_touch_notouch"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value><value name="barrier_nya"><shadow type="text"><field name="TEXT">+12.345</field></shadow></value></block>
+          <block type="purchase_endsbetween_endsoutside"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">2</field></shadow></value><value name="highbarrier_nya"><shadow type="text"><field name="TEXT">+12.345</field></shadow></value><value name="lowbarrier_nya"><shadow type="text"><field name="TEXT">-12.345</field></shadow></value></block>
+          <block type="purchase_staysbetween_goesoutside"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">2</field></shadow></value><value name="highbarrier_nya"><shadow type="text"><field name="TEXT">+12.345</field></shadow></value><value name="lowbarrier_nya"><shadow type="text"><field name="TEXT">-12.345</field></shadow></value></block>
+          <block type="purchase_asianup_asiandown"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value></block>
+          <block type="purchase_highclose_closelow_highlow"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value><value name="multiplier_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block>
+          <block type="purchase_resetcall_resetput"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value></block>
+          <block type="purchase_hightick_lowtick"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="tickprediction_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block>
+          <block type="purchase_onlyups_onlydowns"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">2</field></shadow></value></block>
+          <block type="purchase_accumulatorup"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="selaccumulate_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="limittp_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+          <block type="purchase_multiplyup_multiplydown"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="limittp_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value><value name="limitsl_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+          <block type="purchase_vanillalongcall_vanillalongput"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="barrier_nya"><shadow type="text"><field name="TEXT">+12.345</field></shadow></value></block>
+          <block type="purchase_turboslong_turbosshort"><value name="stake_nya"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="inpduration_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value><value name="barrier_nya"><shadow type="text"><field name="TEXT">+12.345</field></shadow></value></block>
+        </category>
+        <category name="Indicadores">
+          <block type="indicatorsmaarray"><value name="period_nya"><shadow type="math_number"><field name="NUM">20</field></shadow></value></block>
+          <block type="indicatorrsi"><value name="period_nya"><shadow type="math_number"><field name="NUM">14</field></shadow></value></block>
+          <block type="indicatorrsiarray"><value name="period_nya"><shadow type="math_number"><field name="NUM">14</field></shadow></value></block>
+          <block type="indicatorbollingerbands"><value name="period_nya"><shadow type="math_number"><field name="NUM">20</field></shadow></value><value name="stddev_nya"><shadow type="math_number"><field name="NUM">2</field></shadow></value></block>
+          <block type="indicatorcci"><value name="period_nya"><shadow type="math_number"><field name="NUM">14</field></shadow></value></block>
+          <block type="indicatoradx"><value name="period_nya"><shadow type="math_number"><field name="NUM">20</field></shadow></value></block>
+          <block type="indicatortrarray"><value name="period_nya"><shadow type="math_number"><field name="NUM">10</field></shadow></value></block>
+          <block type="indicator_stochastic_rsi">
+              <value name="rsi_period_nya"><shadow type="math_number"><field name="NUM">14</field></shadow></value>
+              <value name="stoch_period_nya"><shadow type="math_number"><field name="NUM">14</field></shadow></value>
+              <value name="k_Period"><shadow type="math_number"><field name="NUM">3</field></shadow></value>
+              <value name="d_Period"><shadow type="math_number"><field name="NUM">3</field></shadow></value>
+          </block>
+        </category>
+        <category name="Outros">
+          <block type="write_log"><value name="log_nya"><shadow type="text"><field name="TEXT">your message here</field></shadow></value></block>
+          <block type="stopbot"></block>
+          <block type="lastcontractdetail"><field name="dropdown_lastcontractdetail_A">profit</field></block>
+          <block type="resultis"></block>
+          <block type="summary"></block>
+          <block type="balance"></block>
+          <category name="Time">
+            <block type="datetime"><field name="dropdown_datetime">seconds</field></block>
+            <block type="runafter"><value name="seconds_nya"><shadow type="math_number"><field name="NUM">5</field></shadow></value></block>
+          </category>
+        </category>
+      </category>
+    </xml>
+
+    <audio id="announcement" preload="auto">
+      <source src="sound/announcement.ogg" type="audio/ogg">
+      <source src="sound/announcement.mp3" type="audio/mp3">
+  </audio>
+  <audio id="earned-money" preload="auto">
+      <source src="sound/coins.ogg" type="audio/ogg">
+      <source src="sound/coins.mp3" type="audio/mp3">
+  </audio>
+  <audio id="job-done" preload="auto">
+      <source src="sound/job-done.ogg" type="audio/ogg">
+      <source src="sound/job-done.mp3" type="audio/mp3">
+  </audio>
+  <audio id="error" preload="auto">
+      <source src="sound/out-of-bounds.ogg" type="audio/ogg">
+      <source src="sound/out-of-bounds.mp3" type="audio/mp3">
+  </audio>
+  <audio id="severe-error" preload="auto">
+      <source src="sound/i-am-being-serious.ogg" type="audio/ogg">
+      <source src="sound/i-am-being-serious.mp3" type="audio/mp3">
+  </audio>
+
+
+      <script src="js/blockly.min.js"></script>
+    <script src="js/reconnecting-websocket.min_202401212301.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/notify.min.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script type="module" src="js/NewCode_15092024c(3)(1).js"></script>
+    </body>
+  </html>

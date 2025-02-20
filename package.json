@@ -1,0 +1,10 @@
+{
+    "name": "project-with-jquery-restored",
+    "version": "1.0.0",
+    "scripts": {
+      "dev": "vite"
+    },
+    "devDependencies": {
+      "vite": "^4.4.5"
+    }
+  }
